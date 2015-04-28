@@ -1,7 +1,7 @@
 
             <div class="page-content">
                 <!-- START X-NAVIGATION VERTICAL -->
-                <ul class="x-navigation x-navigation-horizontal x-navigation-panel page-navigation-top-fixed">
+                <ul class="x-navigation x-navigation-horizontal x-navigation-panel ">
                     <!-- TOGGLE NAVIGATION -->
                     <li class="xn-icon-button">
                         <a href="#" class="x-navigation-minimize"><span class="fa fa-dedent"></span></a>
