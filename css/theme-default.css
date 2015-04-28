@@ -441,7 +441,6 @@ body.page-container-boxed .page-container {
   border-bottom: 0px;
 }
 .x-navigation.x-navigation-horizontal {
-  position: fixed;
   height: 50px;
   background: #002840;
 }
@@ -7346,7 +7345,7 @@ li.ext_zip {
     background-image: url("../img/jqyery/resize-icon@2x.png");
   }
   .x-navigation > li.xn-logo > a:first-child {
-    background-image: url("../img/logo@2x.png");
+    background-image: url("../img/logo.png");
     background-size: 220px 50px;
   }
   .x-navigation.x-navigation-minimized > li.xn-logo > a:first-child {

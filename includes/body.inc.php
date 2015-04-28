@@ -44,11 +44,19 @@
         <!-- END PLUGINS -->
 
         <!-- START THIS PAGE PLUGINS-->
+        <!-- MAP PLUGINS-->
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
+        <script type="text/javascript" src="js/demo_maps.js"></script>
+        <!-- END MAP PLUGINS-->
+        <!-- END MORRIS CHART PLUGINS-->
+        <script type="text/javascript" src="js/plugins/morris/raphael-min.js"></script>
+        <script type="text/javascript" src="js/plugins/morris/morris.min.js"></script>
+        <script type="text/javascript" src="js/demo_charts_morris.js"></script>
+        <!-- END MORRIS CHART PLUGINS-->
+
         <script type='text/javascript' src='js/plugins/icheck/icheck.min.js'></script>
         <script type="text/javascript" src="js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js"></script>
         <script type="text/javascript" src="js/plugins/scrolltotop/scrolltopcontrol.js"></script>
-        <script type="text/javascript" src="js/plugins/morris/raphael-min.js"></script>
-        <script type="text/javascript" src="js/plugins/morris/morris.min.js"></script>
         <script type="text/javascript" src="js/plugins/rickshaw/d3.v3.js"></script>
         <script type="text/javascript" src="js/plugins/rickshaw/rickshaw.min.js"></script>
         <script type='text/javascript' src='js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js'></script>

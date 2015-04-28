@@ -219,7 +219,7 @@
                             <!-- START STACKED CHART -->
                             <div class="panel panel-default">
                                 <div class="panel-body">
-                                    <div id="chart-5" style="height: 300px;"><svg></svg></div>
+                                    <div id="morris-bar-example" style="height: 300px;"></div>
                                 </div>
                             </div>
                             <!-- END STACKED CHART -->
@@ -229,7 +229,7 @@
                             <!-- START REGULAR PIE CHART -->
                             <div class="panel panel-default">
                                 <div class="panel-body">
-                                    <div id="chart-9" style="height: 300px;"><svg></svg></div>
+                                    <div id="" style="height: 300px;"><svg></svg></div>
                                 </div>
                             </div>
                             <!-- END REGULAR PIE CHART -->
@@ -243,7 +243,7 @@
                             <!-- START STACKED CHART -->
                             <div class="panel panel-default">
                                 <div class="panel-body">
-                                    <div id="chart-5" style="height: 300px;"><svg></svg></div>
+                                    <div id="" style="height: 300px;"><svg></svg></div>
                                 </div>
                             </div>
                             <!-- END STACKED CHART -->
@@ -252,7 +252,7 @@
                             <!-- START STACKED CHART -->
                             <div class="panel panel-default">
                                 <div class="panel-body">
-                                    <div id="chart-5" style="height: 300px;"><svg></svg></div>
+                                    <div id="" style="height: 300px;"><svg></svg></div>
                                 </div>
                             </div>
                             <!-- END STACKED CHART -->
@@ -264,7 +264,7 @@
                         <div class="col-md-12">
                             <div class="panel panel-default">
                                 <div class="panel-body panel-body-map">
-                                    <div id="google_world_map" style="height: 300px;"></div>
+                                    <div id="google_ptm_map" style="height: 300px;"></div>
                                 </div>
                             </div>
                         </div>
@@ -276,7 +276,7 @@
                             <!-- START DatatTables -->
                             <div class="panel panel-default">
                                 <div class="panel-body">
-                                    <div id="chart-5" style="height: 300px;"><svg></svg></div>
+                                    <div id="" style="height: 300px;"><svg></svg></div>
                                 </div>
                             </div>
                             <!-- END DatatTables-->
@@ -285,7 +285,7 @@
                             <!-- START DatatTables-->
                             <div class="panel panel-default">
                                 <div class="panel-body">
-                                    <div id="chart-5" style="height: 300px;"><svg></svg></div>
+                                    <div id="" style="height: 300px;"><svg></svg></div>
                                 </div>
                             </div>
                             <!-- END DatatTables -->
