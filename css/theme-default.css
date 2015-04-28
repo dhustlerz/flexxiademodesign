@@ -13,6 +13,7 @@
 @import "rickshaw/rickshaw.css";
 @import "dropzone/dropzone.css";
 @import "animate/animate.min.css";
+@import "bootstrap-plugin.css";
 
 /* PREDEFINED CLASSES */
 .clearfix {
@@ -440,6 +441,7 @@ body.page-container-boxed .page-container {
   border-bottom: 0px;
 }
 .x-navigation.x-navigation-horizontal {
+  position: fixed;
   height: 50px;
   background: #002840;
 }
