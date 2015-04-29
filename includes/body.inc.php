@@ -1,17 +1,21 @@
 <!-- START PAGE CONTAINER -->
         <div class="page-container">
 
-            <!-- START PAGE SIDEBAR -->
-            <?php include 'sidebar.inc.php' ?>
-            <!-- END PAGE SIDEBAR -->
+            <?php
 
-            <!-- PAGE CONTENT -->
-            <?php include 'content.inc.php' ?>
-            <!-- END PAGE CONTENT -->
+             // START PAGE SIDEBAR
+             include 'sidebar.inc.php' ;
+             // END PAGE SIDEBAR -->
 
-            <!-- PAGE CONTENT -->
-            <?php print($output); ?>
-            <!-- END PAGE CONTENT -->
+             // PAGE CONTENT -->
+            include 'content.inc.php';
+            // END PAGE CONTENT -->
+
+
+            ?>
+
+
+
         </div>
         <!-- END PAGE CONTAINER -->
 
