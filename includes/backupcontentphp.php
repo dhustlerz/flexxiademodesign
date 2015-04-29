@@ -1,36 +1,23 @@
 <?php
+$output = '';
 $output.='<div class="page-content">';
-          /**
-           * START X-NAVIGATION VERTICAL
-           */
-           require 'x-navigation.inc.php';
-          /**
-           * END X-NAVIGATION VERTICAL
-           */
+    $output.='<!-- START X-NAVIGATION VERTICAL -->';
+    require 'x-navigation.inc.php';
+    $output.='<!-- END X-NAVIGATION VERTICAL -->';
 
-        /**
-         * START BREADCRUMB
-         */
-        $output.='<ul class="breadcrumb">';
+    $output.='<!-- START BREADCRUMB -->';
+    $output.='<ul class="breadcrumb">';
         $output.='<li><a href="#">Home</a></li>';
         $output.='<li class="active">Dashboard</li>';
     $output.='</ul>';
-    /**
-     * END BREADCRUMB
-     */
+    $output.='<!-- END BREADCRUMB -->';
 
-    /**
-     * PAGE CONTENT WRAPPER
-     */
+    $output.='<!-- PAGE CONTENT WRAPPER -->';
     $output.='<div class="page-content-wrap ">';
 
-        /**
-         * START WIDGETS
-         */
+        $output.='<!-- START WIDGETS -->';
         $output.='<div class="row">';
-            /**
-             * START Total Meetings
-             */
+            $output.='<!-- START Total Meetings-->';
             $output.='<div class="col-md-3 text-center">';
                 $output.='<div class="dashpage-square-number-wrapper bg-ffffff">';
                     $output.='<div class="dashpage-square-number-top padding-top-10 border-1-e7e7e7">';
@@ -47,42 +34,34 @@ $output.='<div class="page-content">';
                     $output.='</div>';
                 $output.='</div>';
             $output.='</div>';
-            /**
-             * END Total Meetings
-             */
+            $output.='<!-- END Total Meetings -->';
             $output.='</div>';
             $output.='<div class="col-md-3 text-center">';
 
-                /**
-                 * START WIDGET MESSAGES
-                 */
+                $putput='<!-- START WIDGET MESSAGES -->';
 
-                    $output.='<div class="dashpage-square-number-wrapper  bg-ffffff">';
-                        $output.='<div class="dashpage-square-number-top padding-top-10 border-1-e7e7e7">';
-                            $output.='<div class="h6 padding-top-6">Evaluations Received</div>';
-                            $output.='<div class="h3 line-height-1-5">2169</div>';
-                        $output.='</div><div class="row margin-0">';
-                        $output.='<div class="dashpage-square-number-left col-xs-6 bg-a3bad9 color-002840 padding-0 height-52">';
-                            $output.='<div class="margin-top-6 margin-bottom-6">1937</div>';
-                            $output.='<div class="font-size-10">Accredited</div>';
-                        $output.='</div>';
-                        $output.='<div class="dashpage-square-number-right col-xs-6 bg-005180 color-fff padding-0 height-52">';
-                            $output.='<div class="margin-top-6 margin-bottom-6">232</div>';
-                            $output.='<div class="font-size-10 text-center">Non Accred</div>';
-                        $output.='</div>';
-                    $output.='</div>';
-            $output.='</div>';
+                    $putput='<div class="dashpage-square-number-wrapper  bg-ffffff">';
+                        $putput='<div class="dashpage-square-number-top padding-top-10 border-1-e7e7e7">';
+                            $putput='<div class="h6 padding-top-6">Evaluations Received</div>';
+                            $putput='<div class="h3 line-height-1-5">2169</div>';
+                        $putput='</div><div class="row margin-0">';
+                        $putput='<div class="dashpage-square-number-left col-xs-6 bg-a3bad9 color-002840 padding-0 height-52">';
+                            $putput='<div class="margin-top-6 margin-bottom-6">1937</div>';
+                            $putput='<div class="font-size-10">Accredited</div>';
+                        $putput='</div>';
+                        $putput='<div class="dashpage-square-number-right col-xs-6 bg-005180 color-fff padding-0 height-52">';
+                            $putput='<div class="margin-top-6 margin-bottom-6">232</div>';
+                            $putput='<div class="font-size-10 text-center">Non Accred</div>';
+                        $putput='</div>';
+                    $putput='</div>';
+            $putput='</div>';
 
-                /**
-                 * END WIDGET MESSAGES
-                 */
+                $output.='<!-- END WIDGET MESSAGES -->';
 
             $output.='</div>';
             $output.='<div class="col-md-3 text-center" >';
 
-                /**
-                 * START WIDGET REGISTRED
-                 */
+                $output.='<!-- START WIDGET REGISTRED -->';
                 $output.='<div class="dashpage-square-number-wrapper  bg-ffffff">';
                         $output.='<div class="dashpage-square-number-top padding-top-10 border-1-e7e7e7">';
                             $output.='<div class="h6 padding-top-6">Avg. Program NTS</div>';
@@ -98,16 +77,12 @@ $output.='<div class="page-content">';
                         $output.='</div>';
                     $output.='</div>';
                 $output.='</div>';
-                /**
-                 * END WIDGET REGISTRED
-                 */
+                $output.='<!-- END WIDGET REGISTRED -->';
 
             $output.='</div>';
             $output.='<div class="col-md-3 text-center">';
 
-                /**
-                 * START WIDGET CLOCK
-                 */
+                $output.='<!-- START WIDGET CLOCK -->';
                  $output.='<div class="dashpage-square-number-wrapper  bg-ffffff">';
                         $output.='<div class="dashpage-square-number-top padding-top-10 border-1-e7e7e7">';
                             $output.='<div class="h6 padding-top-6">Avg. Speaker Rating</div>';
@@ -123,42 +98,34 @@ $output.='<div class="page-content">';
                         $output.='</div>';
                     $output.='</div>';
                 $output.='</div>';
-                /**
-                 * END WIDGET CLOCK
-                 */
+
+
+                $output.='<!-- END WIDGET CLOCK -->';
+
             $output.='</div>';
+
         $output.='</div>';
-        /**
-         * END WIDGETS
-         */
+        $output.='<!-- END WIDGETS -->';
 
         $output.='<div class="row margin-top-24" >';
             $output.='<div class="col-md-6">';
-                /**
-                 * START STACKED CHART
-                 */
+                $output.='<!-- START STACKED CHART -->';
                 $output.='<div class="panel panel-default">';
                     $output.='<div class="panel-body">';
                         $output.='<div id="morris-bar-example" style="height: 300px;"></div>';
                     $output.='</div>';
                 $output.='</div>';
-                /**
-                 * END STACKED CHART
-                 */
+                $output.='<!-- END STACKED CHART -->';
             $output.='</div>';
 
              $output.='<div class="col-md-6">';
-                /**
-                 * START REGULAR PIE CHART
-                 */
+                $output.='<!-- START REGULAR PIE CHART -->';
                 $output.='<div class="panel panel-default">';
                     $output.='<div class="panel-body">';
                         $output.='<div id="" style="height: 300px;"><svg></svg></div>';
                     $output.='</div>';
                 $output.='</div>';
-                /**
-                 * END REGULAR PIE CHART
-                 */
+                $output.='<!-- END REGULAR PIE CHART -->';
             $output.='</div>';
 
 
@@ -166,37 +133,27 @@ $output.='<div class="page-content">';
 
         $output.='<div class="row">';
               $output.='<div class="col-md-6">';
-                /**
-                 * START STACKED CHART
-                 */
+                $output.='<!-- START STACKED CHART -->';
                 $output.='<div class="panel panel-default">';
                     $output.='<div class="panel-body">';
                         $output.='<div id="" style="height: 300px;"><svg></svg></div>';
                     $output.='</div>';
                 $output.='</div>';
-                /**
-                 * END STACKED CHART
-                 */
+                $output.='!-- END STACKED CHART -->';
             $output.='</div>';
               $output.='<div class="col-md-6">';
-                /**
-                 * START STACKED CHART
-                 */
+                $output.='<!-- START STACKED CHART -->';
                 $output.='<div class="panel panel-default">';
                     $output.='<div class="panel-body">';
                         $output.='<div id="" style="height: 300px;"><svg></svg></div>';
                     $output.='</div>';
                 $output.='</div>';
-                /**
-                 * END STACKED CHART
-                 */
+                $output.='<!-- END STACKED CHART -->';
             $output.='</div>';
         $output.='</div>';
 
         $output.='<div class="row">';
-             /**
-              * START GOOGLE WORLD MAP
-              */
+             $output.='<!-- START GOOGLE WORLD MAP -->';
             $output.='<div class="col-md-12">';
                 $output.='<div class="panel panel-default">';
                     $output.='<div class="panel-body panel-body-map">';
@@ -205,43 +162,29 @@ $output.='<div class="page-content">';
                 $output.='</div>';
             $output.='</div>';
         $output.='</div>';
-        /**
-         * END GOOGLE WORLD MAP
-         */
+        $output.='<!-- END GOOGLE WORLD MAP -->';
 
           $output.='<div class="row">';
               $output.='<div class="col-md-6">';
                 $output.='<div class="panel panel-default ">';
-                  /**
-                   * START DEFAULT DATATABLE
-                   */
+                  $output.='<!-- START DEFAULT DATATABLE -->';
                   require 'simpletable.inc.php' ;
-                  /**
-                   * END DEFAULT DATATABLE
-                   */
+                  $output.='<!-- END DEFAULT DATATABLE -->';
                 $output.='</div>';
             $output.='</div>';
               $output.='<div class="col-md-6">';
-                /**
-                 * START DatatTables
-                 */
+                $output.='<!-- START DatatTables-->';
                 $output.='<div class="panel panel-default ">';
-                  /**
-                   * START DEFAULT DATATABLE
-                   */
-                   require 'simpletable.inc.php' ;
-                  /**
-                   * END DEFAULT DATATABLE
-                   */
+                  $output.='<!-- START DEFAULT DATATABLE -->';
+                   require 'simpletable.inc.php';
+                  $output.='<!-- END DEFAULT DATATABLE -->';
                 $output.='</div>';
-                /**
-                 * END DatatTables
-                 */
+                $output.='<!-- END DatatTables -->';
             $output.='</div>';
         $output.='</div>';
     $output.='</div>';
-    /**
-     * END PAGE CONTENT WRAPPER
-     */
+    $output.='<!-- END PAGE CONTENT WRAPPER -->';
 $output.='</div>';
+
+printf($output);
 ?>
