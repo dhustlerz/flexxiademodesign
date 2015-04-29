@@ -103,7 +103,9 @@
                                     <small class="text-muted">John Doe, 21 Sep 2014 /</small><small class="text-success"> Done</small>
                                 </a>
                             </div>
-                            
+                            <div class="panel-footer text-center">
+                                <a href="pages-tasks.html">Show all tasks</a>
+                            </div>
                         </div>
                     </li>-->
                     <!-- END TASKS -->
