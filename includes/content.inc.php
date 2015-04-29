@@ -1,9 +1,29 @@
 <?php
+$output = '';
 $output.='<div class="page-content">';
           /**
            * START X-NAVIGATION VERTICAL
+           * we did'nt call x-navigation.inc.php because of some rendering/displaying issues
            */
-           require 'x-navigation.inc.php';
+        $output.='<ul class="x-navigation x-navigation-horizontal x-navigation-panel ">';
+          $output.='<!-- TOGGLE NAVIGATION -->';
+          $output.='<li class="xn-icon-button">';
+              $output.='<a href="#" class="x-navigation-minimize"><span class="fa fa-dedent"></span></a>';
+          $output.='</li>';
+          $output.='<!-- END TOGGLE NAVIGATION -->';
+          $output.='<!-- SEARCH -->';
+          $output.='<li class="xn-search">';
+              $output.='<form role="form">';
+                  $output.='<input type="text" name="search" placeholder="Search..."/>';
+              $output.='</form>';
+          $output.='</li>';
+          $output.='<!-- END SEARCH -->';
+          $output.='<!-- SIGN OUT -->';
+          $output.='<li class="xn-icon-button pull-right">';
+              $output.='<a href="#" class="mb-control" data-box="#mb-signout"><span class="fa fa-sign-out"></span></a>';
+          $output.='</li>';
+          $output.='<!-- END SIGN OUT -->';
+        $output.='</ul>';
           /**
            * END X-NAVIGATION VERTICAL
            */
@@ -244,4 +264,6 @@ $output.='<div class="page-content">';
      * END PAGE CONTENT WRAPPER
      */
 $output.='</div>';
+printf($output);
+
 ?>
