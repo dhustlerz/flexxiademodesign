@@ -273,7 +273,7 @@
 
                       <div class="row">
                           <div class="col-md-6">
-                            <div class="panel panel-default">
+                            <div class="panel panel-default color-000">
                               <!-- START DEFAULT DATATABLE -->
                               <?php require 'simpletable.inc.php' ?>
                               <!-- END DEFAULT DATATABLE -->
@@ -281,7 +281,7 @@
                         </div>
                           <div class="col-md-6">
                             <!-- START DatatTables-->
-                            <div class="panel panel-default">
+                            <div class="panel panel-default color-000">
                               <!-- START DEFAULT DATATABLE -->
                               <?php require 'simpletable.inc.php' ?>
                               <!-- END DEFAULT DATATABLE -->
