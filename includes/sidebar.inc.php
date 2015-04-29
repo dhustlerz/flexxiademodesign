@@ -23,6 +23,9 @@
                             </div>
                         </div>
                     </li> -->
+                    <!-- MESSAGE BOX-->
+                    <?php include 'message-box.inc.php' ?>
+                    <!-- END MESSAGE BOX-->
                     <li class="xn-title">Navigation</li>
                     <li class="active">
                         <a href="index.php"><span class="fa fa-desktop"></span> <span class="xn-text">Dashboard</span></a>
@@ -135,22 +138,22 @@
                     <li class="xn-openable">
                         <a href="tables.html"><span class="fa fa-table"></span> <span class="xn-text">Tables</span></a>
                         <ul>
-                            <li><a href="table-basic.html"><span class="fa fa-align-justify"></span> Basic</a></li>
-                            <li><a href="table-datatables.html"><span class="fa fa-sort-alpha-desc"></span> Data Tables</a></li>
-                            <li><a href="table-export.html"><span class="fa fa-download"></span> Export Tables</a></li>
+                            <li><a href="table-basic.php"><span class="fa fa-align-justify"></span> Basic</a></li>
+                            <li><a href="table-datatables.php"><span class="fa fa-sort-alpha-desc"></span> Data Tables</a></li>
+
                         </ul>
                     </li>
                     <li class="xn-openable">
                         <a href="#"><span class="fa fa-bar-chart-o"></span> <span class="xn-text">Charts</span></a>
                         <ul>
-                            <li><a href="charts-morris.html"><span class="xn-text">Morris</span></a></li>
-                            <li><a href="charts-nvd3.html"><span class="xn-text">NVD3</span></a></li>
-                            <li><a href="charts-rickshaw.html"><span class="xn-text">Rickshaw</span></a></li>
-                            <li><a href="charts-other.html"><span class="xn-text">Other</span></a></li>
+                            <li><a href="charts-morris.php"><span class="xn-text">Morris</span></a></li>
+                            <li><a href="charts-nvd3.php"><span class="xn-text">NVD3</span></a></li>
+                            <li><a href="charts-rickshaw.php"><span class="xn-text">Rickshaw</span></a></li>
+                            <li><a href="charts-other.php"><span class="xn-text">Other</span></a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="maps.html"><span class="fa fa-map-marker"></span> <span class="xn-text">Maps</span></a>
+                        <a href="maps.php"><span class="fa fa-map-marker"></span> <span class="xn-text">Maps</span></a>
                     </li>
                     <li class="xn-openable">
                         <a href="#"><span class="fa fa-sitemap"></span> <span class="xn-text">Navigation Levels</span></a>
