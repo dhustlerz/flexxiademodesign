@@ -13,6 +13,7 @@
 @import "rickshaw/rickshaw.css";
 @import "dropzone/dropzone.css";
 @import "animate/animate.min.css";
+@import "bootstrap-plugin.css";
 
 /* PREDEFINED CLASSES */
 .clearfix {
@@ -7344,7 +7345,7 @@ li.ext_zip {
     background-image: url("../img/jqyery/resize-icon@2x.png");
   }
   .x-navigation > li.xn-logo > a:first-child {
-    background-image: url("../img/logo@2x.png");
+    background-image: url("../img/logo.png");
     background-size: 220px 50px;
   }
   .x-navigation.x-navigation-minimized > li.xn-logo > a:first-child {
