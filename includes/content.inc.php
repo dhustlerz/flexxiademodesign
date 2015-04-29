@@ -120,12 +120,12 @@
                 <!-- END BREADCRUMB -->
 
                 <!-- PAGE CONTENT WRAPPER -->
-                <div class="page-content-wrap text-center margin-top-24 ">
+                <div class="page-content-wrap ">
 
                     <!-- START WIDGETS -->
                     <div class="row">
                         <!-- START Total Meetings-->
-                        <div class="col-md-3 ">
+                        <div class="col-md-3 text-center">
                             <div class="dashpage-square-number-wrapper bg-ffffff">
                                 <div class="dashpage-square-number-top padding-top-10 border-1-e7e7e7">
                                     <div class="h6 padding-top-6">Total Meetings</div>
@@ -273,20 +273,18 @@
 
                       <div class="row">
                           <div class="col-md-6">
-                            <!-- START DatatTables -->
                             <div class="panel panel-default">
-                                <div class="panel-body">
-                                    <div id="" style="height: 300px;"><svg></svg></div>
-                                </div>
+                              <!-- START DEFAULT DATATABLE -->
+                              <?php require 'simpletable.inc.php' ?>
+                              <!-- END DEFAULT DATATABLE -->
                             </div>
-                            <!-- END DatatTables-->
                         </div>
                           <div class="col-md-6">
                             <!-- START DatatTables-->
                             <div class="panel panel-default">
-                                <div class="panel-body">
-                                    <div id="" style="height: 300px;"><svg></svg></div>
-                                </div>
+                              <!-- START DEFAULT DATATABLE -->
+                              <?php require 'simpletable.inc.php' ?>
+                              <!-- END DEFAULT DATATABLE -->
                             </div>
                             <!-- END DatatTables -->
                         </div>

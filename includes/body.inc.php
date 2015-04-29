@@ -54,6 +54,10 @@
         <script type="text/javascript" src="js/demo_charts_morris.js"></script>
         <!-- END MORRIS CHART PLUGINS-->
 
+        <!-- START DATATABLES PLUGINS-->
+        <script type="text/javascript" src="js/plugins/datatables/jquery.dataTables.min.js"></script>
+        <!-- END DATATABLES PLUGINS-->
+
         <script type='text/javascript' src='js/plugins/icheck/icheck.min.js'></script>
         <script type="text/javascript" src="js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js"></script>
         <script type="text/javascript" src="js/plugins/scrolltotop/scrolltopcontrol.js"></script>
