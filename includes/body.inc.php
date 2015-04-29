@@ -8,10 +8,15 @@
             <!-- PAGE CONTENT -->
             <?php include 'content.inc.php' ?>
             <!-- END PAGE CONTENT -->
+
+            <!-- PAGE CONTENT -->
+            <?php print($output); ?>
+            <!-- END PAGE CONTENT -->
         </div>
         <!-- END PAGE CONTAINER -->
+
         <!--
-        * The message box is moved to in sidebar.inc.php so as to make a call from each page
+        *The message box is moved to in sidebar.inc.php so as to make a call from each page
         -->
         <!-- START PRELOADS -->
         <audio id="audio-alert" src="audio/alert.mp3" preload="auto"></audio>

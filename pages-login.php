@@ -15,9 +15,7 @@
         <!-- EOF CSS INCLUDE -->
     </head>
     <body>
-
         <div class="login-container">
-
             <div class="login-box animated fadeInDown">
                 <div class="login-logo"></div>
                 <div class="login-body">
