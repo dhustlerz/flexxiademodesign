@@ -1,14 +1,21 @@
 var nvd3Charts = function() {
-	
+
         var myColors = ["#33414E","#8DCA35","#00BFDD","#FF702A","#DA3610",
                         "#80CDC2","#A6D969","#D9EF8B","#FFFF99","#F7EC37","#F46D43",
                         "#E08215","#D73026","#A12235","#8C510A","#14514B","#4D9220",
-                        "#542688", "#4575B4", "#74ACD1", "#B8E1DE", "#FEE0B6","#FDB863",                                                
+                        "#542688", "#4575B4", "#74ACD1", "#B8E1DE", "#FEE0B6","#FDB863",
                         "#C51B7D","#DE77AE","#EDD3F2"];
         d3.scale.myColors = function() {
             return d3.scale.ordinal().range(myColors);
         };
-        
+        var colorArray = ['#DA5D74', '#8DC63F', '#005180','#7AB1C6', '#8DC63F', '#8DC63F' ,'#E0D751','#ADADAD'];
+
+				colorFunction = function() {
+						return function(d, i) {
+						return colorArray[i];
+				};
+			};
+
 	var startChart1 = function() {
 		/*These lines are all chart setup.  Pick and choose which chart features you want to utilize. */
 		nv.addGraph(function() {
@@ -234,8 +241,8 @@ var nvd3Charts = function() {
 				}).showValues(true)//Show bar value next to each bar.
 				.tooltips(true)//Show tooltips on hover.
 				.transitionDuration(350)
-                                .showControls(true)
-                                .color(d3.scale.myColors().range());
+        .showControls(true)
+        .color(colorFunction());
 				//Allow user to switch between "Grouped" and "Stacked" mode.
 
 				chart.yAxis.tickFormat(d3.format(',.2f'));
@@ -368,8 +375,8 @@ var nvd3Charts = function() {
 			.labelThreshold(.05)//Configure the minimum slice size for labels to show up
 			.labelType("percent")//Configure what type of data to show in the label. Can be "key", "value" or "percent"
 			.donut(true)//Turn on Donut mode. Makes pie chart look tasty!
-			.donutRatio(0.35)//Configure how big you want the donut hole size to be.
-			.color(d3.scale.myColors().range());;
+			.donutRatio(0.45)//Configure how big you want the donut hole size to be.
+			.color(colorFunction());
 
 			d3.select("#chart-10 svg").datum(exampleData()).transition().duration(350).call(chart);
 
@@ -435,7 +442,7 @@ var nvd3Charts = function() {
 		};
 	}
 
-	return {		
+	return {
 		init : function() {
 			startChart1();
 			startChart2();

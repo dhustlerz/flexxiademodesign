@@ -17,12 +17,21 @@ $output.='<div class="page-content">';
                   $output.='<input type="text" name="search" placeholder="Search..."/>';
               $output.='</form>';
           $output.='</li>';
+          $output.='<li >';
+           $output.='<span class="color-fff font-family-inherit padding-left-20 font-size-14 line-height-3-5 ">KPI DashBoard</span>';
+          $output.='</li>';
           $output.='<!-- END SEARCH -->';
+
           $output.='<!-- SIGN OUT -->';
           $output.='<li class="xn-icon-button pull-right">';
               $output.='<a href="#" class="mb-control" data-box="#mb-signout"><span class="fa fa-sign-out"></span></a>';
           $output.='</li>';
           $output.='<!-- END SIGN OUT -->';
+              $output.='<li class=" pull-right ">';
+                  $output.='<div id="reportrange" class=" color-fff bg-005180 padding-px-5 margin-top-10  ">';
+                  $output.='<span></span><b class="caret"></b>';
+              $output.='</div>';
+          $output.='</li>';
         $output.='</ul>';
           /**
            * END X-NAVIGATION VERTICAL

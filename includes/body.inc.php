@@ -74,7 +74,7 @@
         <script type="text/javascript" src="js/settings.js"></script>
         <script type="text/javascript" src="js/plugins.js"></script>
         <script type="text/javascript" src="js/actions.js"></script>
-        <!--<script type="text/javascript" src="js/demo_dashboard.js"></script>-->
+       <script type="text/javascript" src="js/demo_dashboard.js"></script>
         <!-- END TEMPLATE -->
          <!-- START D3V3-->
         <script type="text/javascript" src="js/plugins/nvd3/lib/d3.v3.js"></script>
