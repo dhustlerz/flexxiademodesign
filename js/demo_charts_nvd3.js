@@ -375,7 +375,7 @@ var nvd3Charts = function() {
 			.labelThreshold(.05)//Configure the minimum slice size for labels to show up
 			.labelType("percent")//Configure what type of data to show in the label. Can be "key", "value" or "percent"
 			.donut(true)//Turn on Donut mode. Makes pie chart look tasty!
-			.donutRatio(0.45)//Configure how big you want the donut hole size to be.
+			.donutRatio(0.40)//Configure how big you want the donut hole size to be.
 			.color(colorFunction());
 
 			d3.select("#chart-10 svg").datum(exampleData()).transition().duration(350).call(chart);
