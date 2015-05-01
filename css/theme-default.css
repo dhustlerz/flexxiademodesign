@@ -1061,7 +1061,7 @@ body.page-container-boxed .page-container {
   float: left;
   padding: 15px 10px;
   position: relative;
-  background: #2d3945;
+  background: #002840;
 }
 .profile .profile-image {
   float: left;
@@ -7357,3 +7357,18 @@ li.ext_zip {
     background-size: 220px 50px;
   }
 }
+
+/**
+ * Custom css
+ * author: Jashanpreet singh
+ * date: 2015-05-01
+ */
+.panel-header {
+  height:30px;
+  font-family: inherit;
+  font-size: 15px;
+  padding-left: 20px;
+  background-color: #005180;
+  color: #ffffff;
+  line-height: 2;
+ }

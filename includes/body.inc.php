@@ -39,15 +39,23 @@
         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
         <script type="text/javascript" src="js/demo_maps.js"></script>
         <!-- END MAP PLUGINS-->
+
         <!-- END MORRIS CHART PLUGINS-->
         <script type="text/javascript" src="js/plugins/morris/raphael-min.js"></script>
         <script type="text/javascript" src="js/plugins/morris/morris.min.js"></script>
         <script type="text/javascript" src="js/demo_charts_morris.js"></script>
+
         <!-- END MORRIS CHART PLUGINS-->
+        <!-- END KNOB CHART PLUGINS-->
+        <script type="text/javascript" src="js/plugins/sparkline/jquery.sparkline.min.js"></script>
+        <script type="text/javascript" src="js/plugins/knob/jquery.knob.min.js"></script>
+        <!-- END KNOB CHART PLUGINS-->
 
         <!-- START DATATABLES PLUGINS-->
         <script type="text/javascript" src="js/plugins/datatables/jquery.dataTables.min.js"></script>
         <!-- END DATATABLES PLUGINS-->
+
+
 
         <script type='text/javascript' src='js/plugins/icheck/icheck.min.js'></script>
         <script type="text/javascript" src="js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js"></script>
@@ -66,6 +74,11 @@
         <script type="text/javascript" src="js/settings.js"></script>
         <script type="text/javascript" src="js/plugins.js"></script>
         <script type="text/javascript" src="js/actions.js"></script>
-        <script type="text/javascript" src="js/demo_dashboard.js"></script>
+        <!--<script type="text/javascript" src="js/demo_dashboard.js"></script>-->
         <!-- END TEMPLATE -->
+         <!-- START D3V3-->
+        <script type="text/javascript" src="js/plugins/nvd3/lib/d3.v3.js"></script>
+        <script type="text/javascript" src="js/plugins/nvd3/nv.d3.min.js"></script>
+        <script type="text/javascript" src="js/demo_charts_nvd3.js"></script>
+        <!-- END D3V3-->
     <!-- END SCRIPTS -->
