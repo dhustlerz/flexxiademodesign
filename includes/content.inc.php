@@ -153,27 +153,50 @@ $output.='<div class="page-content">';
          */
 
         $output.='<div class="row margin-top-24" >';
-            $output.='<div class="col-md-6">';
-                /**
-                 * START STACKED CHART
-                 */
-                $output.='<div class="panel panel-default">';
-                    $output.='<div class="panel-body">';
-                        $output.='<div id="morris-bar-example" style="height: 300px;"></div>';
-                    $output.='</div>';
+            $output.='<div class="col-md-6 ">';
+                $output.='<div class="panel panel-default ">';
+                  $output.='<div class=" panel-header">Programs Total by Month (Jan-Dec) </div>';
+                  $output.='<div class="row bg-ffffff padding-left-pt-18 padding-top-30"  style="height: 300px;"">';
+                      $output.='<div class="col-md-6 ">';
+                      /**
+                       * START STACKED CHART
+                       */
+
+                          $output.='<div class="panel-body ">';
+                                  $output.='<input class="knob" data-min="0" data-max="100" data-width="180" data-height="180" data-thickness=".1" data-fgColor="#8dc63f" data-bgColor="#ebebeb" value="60">';
+
+                          $output.='</div>';
+
+                      /**
+                       * END STACKED CHART
+                       */
+                      $output.='</div>';
+                      $output.='<div class="col-md-6 ">';
+                      /**
+                       * START STACKED CHART
+                       */
+
+                          $output.='<div class="panel-body ">';
+                              $output.='<input class="knob" data-min="0" data-max="100" data-width="180" data-height="180" data-thickness=".1" data-fgColor="#DA5D74" data-bgColor="#ebebeb" value="78">';
+                          $output.='</div>';
+
+
+                      /**
+                       * END STACKED CHART
+                       */
+                      $output.='</div>';
+                  $output.='</div>';
                 $output.='</div>';
-                /**
-                 * END STACKED CHART
-                 */
             $output.='</div>';
 
-             $output.='<div class="col-md-6">';
+             $output.='<div class="col-md-6 " style="">';
                 /**
                  * START REGULAR PIE CHART
                  */
-                $output.='<div class="panel panel-default">';
-                    $output.='<div class="panel-body">';
-                        $output.='<div id="" style="height: 300px;"><svg></svg></div>';
+                $output.='<div class="panel ">';
+                $output.='<div class=" panel-header">Programs Total by Month (Jan-Dec) </div>';
+                    $output.='<div class="panel-body bg-ffffff" style="height: 300px;">';
+                        $output.='<div class="" id="chart-10" style="height: 300px;"><svg></svg></div>';
                     $output.='</div>';
                 $output.='</div>';
                 /**
@@ -184,27 +207,29 @@ $output.='<div class="page-content">';
 
         $output.='</div>';
 
-        $output.='<div class="row">';
-              $output.='<div class="col-md-6">';
+        $output.='<div class="row margin-top-24">';
+              $output.='<div class="col-md-6 ">';
                 /**
                  * START STACKED CHART
                  */
-                $output.='<div class="panel panel-default">';
+                $output.='<div class="panel ">';
+                $output.='<div class=" panel-header">Program/Evaluation by Business Unit</div>';
                     $output.='<div class="panel-body">';
-                        $output.='<div id="" style="height: 300px;"><svg></svg></div>';
+                        $output.='<div id="chart-5" style="height: 300px;"><svg></svg></div>';
                     $output.='</div>';
                 $output.='</div>';
                 /**
                  * END STACKED CHART
                  */
             $output.='</div>';
-              $output.='<div class="col-md-6">';
+              $output.='<div class="col-md-6 ">';
                 /**
                  * START STACKED CHART
                  */
-                $output.='<div class="panel panel-default">';
+                 $output.='<div class="panel ">';
+                 $output.='<div class=" panel-header">Programs Total by Month (Jan-Dec) </div>';
                     $output.='<div class="panel-body">';
-                        $output.='<div id="" style="height: 300px;"><svg></svg></div>';
+                        $output.='<div id="morris-line-example" style="height: 300px;"></div>';
                     $output.='</div>';
                 $output.='</div>';
                 /**
