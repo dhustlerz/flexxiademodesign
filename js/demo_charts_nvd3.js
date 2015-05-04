@@ -242,7 +242,7 @@ var nvd3Charts = function() {
 				.tooltips(true)//Show tooltips on hover.
 				.transitionDuration(350)
         .showControls(true)
-        .color(colorFunction());
+        .color(['#aec7e8', '#7b94b5']).stacked(true);
 				//Allow user to switch between "Grouped" and "Stacked" mode.
 
 				chart.yAxis.tickFormat(d3.format(',.2f'));

@@ -1,5 +1,5 @@
 <?php
-  $output.='<div class="panel-body">';
+  $output.='<div class="panel-body padding-0">';
       $output.='<table class="table datatable_simple">';
          $output.='<thead><tr><th>Name</th><th>Events</th><th>Evaluations</th><th>Rating</th> </tr></thead>';
           $output.='<tbody>';
