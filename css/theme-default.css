@@ -3172,8 +3172,8 @@ blockquote.pull-right {
   background: #F8FAFC;
 }
 .table > thead > tr > th {
-  background: #f1f5f9;
-  color: #56688A;
+  background: #19628c;
+  color: #ffffff;
   font-size: 12px;
 }
 .panel-body.panel-body-table {
@@ -7500,7 +7500,7 @@ li.ext_zip {
     background-size: 200px 20px;
   }
   .ui-resizable-se {
-    background-image: url("../img/jqyery/resize-icon@2x.png");
+    background-image: url("../img/jqyery/logo.png");
   }
   .x-navigation > li.xn-logo > a:first-child {
     background-image: url("../img/logo.png");
@@ -7511,7 +7511,7 @@ li.ext_zip {
     background-size: 50px 50px;
   }
   .login-container .login-box .login-logo {
-    background-image: url("../img/logo@2x.png");
+    background-image: url("../img/logo.png");
     background-size: 220px 50px;
   }
 }
