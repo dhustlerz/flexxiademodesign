@@ -56,7 +56,7 @@
         <!-- END DATATABLES PLUGINS-->
 
 
-
+        <script type="text/javascript" src="js/markerclusterplus.js"></script>
         <script type='text/javascript' src='js/plugins/icheck/icheck.min.js'></script>
         <script type="text/javascript" src="js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js"></script>
         <script type="text/javascript" src="js/plugins/scrolltotop/scrolltopcontrol.js"></script>
@@ -68,13 +68,18 @@
         <script type="text/javascript" src="js/plugins/owl/owl.carousel.min.js"></script>
         <script type="text/javascript" src="js/plugins/moment.min.js"></script>
         <script type="text/javascript" src="js/plugins/daterangepicker/daterangepicker.js"></script>
+          <script type="text/javascript" src="js/plugins/markerclustererplus.js"></script>
+          <script type="text/javascript" src="js/plugins/jquery-animateNumber.js"></script>
+
         <!-- END THIS PAGE PLUGINS-->
 
         <!-- START TEMPLATE -->
         <script type="text/javascript" src="js/settings.js"></script>
         <script type="text/javascript" src="js/plugins.js"></script>
         <script type="text/javascript" src="js/actions.js"></script>
-       <script type="text/javascript" src="js/demo_dashboard.js"></script>
+
+        // Only select date module needs demo_dasboard.js
+        <script type="text/javascript" src="js/demo_dashboard.js"></script>
         <!-- END TEMPLATE -->
          <!-- START D3V3-->
         <script type="text/javascript" src="js/plugins/nvd3/lib/d3.v3.js"></script>

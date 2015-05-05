@@ -2,7 +2,7 @@
 $output = '';
 $output.='<div class="page-content">';
           /**
-           * START X-NAVIGATION VERTICAL
+           * START X-NAVIGATION VERTICAL 1
            * we did'nt call x-navigation.inc.php because of some rendering/displaying issues
            */
         $output.='<ul class="x-navigation x-navigation-horizontal x-navigation-panel ">';
@@ -11,15 +11,7 @@ $output.='<div class="page-content">';
               $output.='<a href="#" class="x-navigation-minimize"><span class="fa fa-dedent"></span></a>';
           $output.='</li>';
           $output.='<!-- END TOGGLE NAVIGATION -->';
-          $output.='<!-- SEARCH -->';
-          $output.='<li class="xn-search">';
-              $output.='<form role="form">';
-                  $output.='<input type="text" name="search" placeholder="Search..."/>';
-              $output.='</form>';
-          $output.='</li>';
-          $output.='<li >';
-           $output.='<span class="color-fff font-family-inherit padding-left-20 font-size-14 line-height-3-5 ">KPI DashBoard</span>';
-          $output.='</li>';
+
           $output.='<!-- END SEARCH -->';
 
           $output.='<!-- SIGN OUT -->';
@@ -27,12 +19,38 @@ $output.='<div class="page-content">';
               $output.='<a href="#" class="mb-control" data-box="#mb-signout"><span class="fa fa-sign-out"></span></a>';
           $output.='</li>';
           $output.='<!-- END SIGN OUT -->';
+
+          $output.='</li>';
+          $output.='<!-- SEARCH -->';
+           $output.='<li class="xn-search pull-right">';
+              $output.='<form role="form">';
+                  $output.='<input type="text" name="search" placeholder="Search..."/>';
+              $output.='</form>';
+          $output.='</li>';
+        $output.='</ul>';
+          /**
+           * START X-NAVIGATION VERTICAL 2
+           * we did'nt call x-navigation.inc.php because of some rendering/displaying issues
+           */
+        $output.='<div class="bg-F5F5F5">';
+        $output.='<ul class=" x-navigation x-navigation-horizontal x-navigation-panel" style="background-color:#F5F5F5">';
+          $output.='<!-- TOGGLE NAVIGATION -->';
+
+          $output.='<!-- END TOGGLE NAVIGATION -->';
+          $output.='<li >';
+           $output.='<span class="color-002840 font-family-inherit padding-left-40 font-size-20 line-height-2-5 ">KPI Reporting DashBoard</span>';
+          $output.='</li>';
+          $output.='<!-- END SEARCH -->';
+
+
               $output.='<li class=" pull-right ">';
-                  $output.='<div id="reportrange" class=" color-fff bg-005180 padding-px-5 margin-top-10  ">';
+                  $output.='<div id="reportrange" class="border-radius-6 margin-right-6 color-fff bg-005180 padding-px-5 margin-top-10  ">';
                   $output.='<span></span><b class="caret"></b>';
               $output.='</div>';
           $output.='</li>';
+
         $output.='</ul>';
+        $output.='</div>';
           /**
            * END X-NAVIGATION VERTICAL
            */
@@ -60,11 +78,11 @@ $output.='<div class="page-content">';
             /**
              * START Total Meetings
              */
-            $output.='<div class="col-md-3 text-center">';
+            $output.='<div class="col-md-4 text-center">';
                 $output.='<div class="dashpage-square-number-wrapper bg-ffffff">';
                     $output.='<div class="dashpage-square-number-top padding-top-10 border-1-e7e7e7">';
                         $output.='<div class="h6 padding-top-6">Total Meetings</div>';
-                        $output.='<div class="h3 line-height-1-5">417</div>';
+                        $output.='<div class="animate-number h3 line-height-1-5">417</div>';
                     $output.='</div><div class="row margin-0">';
                     $output.='<div class="dashpage-square-number-left col-xs-6 bg-a3bad9 color-002840 padding-0 height-52">';
                         $output.='<div class="margin-top-6 margin-bottom-6">387</div>';
@@ -80,7 +98,7 @@ $output.='<div class="page-content">';
              * END Total Meetings
              */
             $output.='</div>';
-            $output.='<div class="col-md-3 text-center">';
+            $output.='<div class="col-md-4 text-center">';
 
                 /**
                  * START WIDGET MESSAGES
@@ -89,7 +107,7 @@ $output.='<div class="page-content">';
                     $output.='<div class="dashpage-square-number-wrapper  bg-ffffff">';
                         $output.='<div class="dashpage-square-number-top padding-top-10 border-1-e7e7e7">';
                             $output.='<div class="h6 padding-top-6">Evaluations Received</div>';
-                            $output.='<div class="h3 line-height-1-5">2169</div>';
+                            $output.='<div class="animate-number-1 h3 line-height-1-5">2169</div>';
                         $output.='</div><div class="row margin-0">';
                         $output.='<div class="dashpage-square-number-left col-xs-6 bg-a3bad9 color-002840 padding-0 height-52">';
                             $output.='<div class="margin-top-6 margin-bottom-6">1937</div>';
@@ -107,7 +125,7 @@ $output.='<div class="page-content">';
                  */
 
             $output.='</div>';
-            $output.='<div class="col-md-3 text-center" >';
+            $output.='<div class="col-md-4 text-center" >';
 
                 /**
                  * START WIDGET REGISTRED
@@ -115,7 +133,7 @@ $output.='<div class="page-content">';
                 $output.='<div class="dashpage-square-number-wrapper  bg-ffffff">';
                         $output.='<div class="dashpage-square-number-top padding-top-10 border-1-e7e7e7">';
                             $output.='<div class="h6 padding-top-6">Avg. Program NTS</div>';
-                            $output.='<div class="h3 line-height-1-5">+14</div>';
+                            $output.='<div class="animate-number-2 h3 line-height-1-5">+14</div>';
                         $output.='</div><div class="row margin-0">';
                         $output.='<div class="dashpage-square-number-left col-xs-6 bg-a3bad9 color-002840 padding-0 height-52">';
                             $output.='<div class="margin-top-6 margin-bottom-6">+16</div>';
@@ -132,31 +150,31 @@ $output.='<div class="page-content">';
                  */
 
             $output.='</div>';
-            $output.='<div class="col-md-3 text-center">';
+        //     $output.='<div class="col-md-3 text-center">';
 
-                /**
-                 * START WIDGET CLOCK
-                 */
-                 $output.='<div class="dashpage-square-number-wrapper  bg-ffffff">';
-                        $output.='<div class="dashpage-square-number-top padding-top-10 border-1-e7e7e7">';
-                            $output.='<div class="h6 padding-top-6">Avg. Speaker Rating</div>';
-                            $output.='<div class="h3 line-height-1-5">4.64</div>';
-                        $output.='</div><div class="row margin-0">';
-                        $output.='<div class="dashpage-square-number-left col-xs-6 bg-a3bad9 color-002840 padding-0 height-52">';
-                            $output.='<div class="margin-top-6 margin-bottom-6">4.66</div>';
-                            $output.='<div class="font-size-10">Accredited</div>';
-                        $output.='</div>';
-                        $output.='<div class="dashpage-square-number-right col-xs-6 bg-005180 color-fff padding-0 height-52">';
-                            $output.='<div class="margin-top-6 margin-bottom-6">4.50</div>';
-                            $output.='<div class="font-size-10 text-center">Non Accred</div>';
-                        $output.='</div>';
-                    $output.='</div>';
-                $output.='</div>';
-                /**
-                 * END WIDGET CLOCK
-                 */
-            $output.='</div>';
-        $output.='</div>';
+        //         /**
+        //          * START WIDGET CLOCK
+        //          */
+        //          $output.='<div class="dashpage-square-number-wrapper  bg-ffffff">';
+        //                 $output.='<div class="dashpage-square-number-top padding-top-10 border-1-e7e7e7">';
+        //                     $output.='<div class="h6 padding-top-6">Avg. Speaker Rating</div>';
+        //                     $output.='<div class="animate-number-3 h3 line-height-1-5">4.64</div>';
+        //                 $output.='</div><div class="row margin-0">';
+        //                 $output.='<div class="dashpage-square-number-left col-xs-6 bg-a3bad9 color-002840 padding-0 height-52">';
+        //                     $output.='<div class="margin-top-6 margin-bottom-6">4.66</div>';
+        //                     $output.='<div class="font-size-10">Accredited</div>';
+        //                 $output.='</div>';
+        //                 $output.='<div class="dashpage-square-number-right col-xs-6 bg-005180 color-fff padding-0 height-52">';
+        //                     $output.='<div class="margin-top-6 margin-bottom-6">4.50</div>';
+        //                     $output.='<div class="font-size-10 text-center">Non Accred</div>';
+        //                 $output.='</div>';
+        //             $output.='</div>';
+        //         $output.='</div>';
+        //         /**
+        //          * END WIDGET CLOCK
+        //          */
+        //     $output.='</div>';
+         $output.='</div>';
         /**
          * END WIDGETS
          */
@@ -254,7 +272,7 @@ $output.='<div class="page-content">';
             $output.='<div class="col-md-12">';
                 $output.='<div class="panel panel-default">';
                     $output.='<div class="panel-body panel-body-map">';
-                        $output.='<div id="google_ptm_map" style="height: 300px;"></div>';
+                        $output.='<div id="google_world_map_canada" style="height: 300px;"></div>';
                     $output.='</div>';
                 $output.='</div>';
             $output.='</div>';
