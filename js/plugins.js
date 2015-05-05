@@ -242,6 +242,7 @@ $(function() {
 
             if($(".knob").length > 0){
                 $(".knob").knob({
+                    'dynamicDraw': true,
                     'draw' : function () {
                     $(this.i).val(this.cv + '%')
                     }
