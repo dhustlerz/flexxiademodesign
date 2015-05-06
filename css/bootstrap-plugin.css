@@ -533,7 +533,9 @@
 .padding-right-0 {
   padding-right: 0px;
 }
-
+.padding-bottom-10 {
+  padding-bottom: 10px;
+}
 .padding-bottom-12 {
   padding-bottom: 12px;
 }
@@ -717,6 +719,14 @@
     width: 50%;
   }
 }
+.nvd3.nv-pie .nv-slice text {
+    fill: white !important;
+}
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
 
 /* Medium devices (desktops, 992px and up), @screen-md-min */
 @media (min-width: 992px) {

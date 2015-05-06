@@ -229,23 +229,25 @@ var nvd3Charts = function() {
 	var startChart5 = function() {
 		d3.json('assets/plugins/nvd3/multiBarHorizontalData.json', function(data) {
 			nv.addGraph(function() {
-				var chart = nv.models.multiBarHorizontalChart().x(function(d) {
-					return d.label;
-				}).y(function(d) {
-					return d.value;
-				}).margin({
+				var chart = nv.models.multiBarHorizontalChart()
+
+				.x(function(d) {return d.label;})
+				.y(function(d) {return d.value;})
+
+				.margin({
 					top : 30,
 					right : 20,
 					bottom : 50,
-					left : 175
+					left :100
 				}).showValues(true)//Show bar value next to each bar.
 				.tooltips(true)//Show tooltips on hover.
 				.transitionDuration(350)
-        .showControls(true)
-        .color(['#aec7e8', '#7b94b5']).stacked(true);
+        .showControls(false)
+        .color(['#aec7e8', '#7b94b5'])
+        .stacked(false);
 				//Allow user to switch between "Grouped" and "Stacked" mode.
 
-				chart.yAxis.tickFormat(d3.format(',.2f'));
+				chart.yAxis.tickFormat(d3.format(',f'));
 
 				d3.select('#chart-5 svg').datum(data).call(chart);
 
@@ -354,62 +356,80 @@ var nvd3Charts = function() {
 	var startChart9 = function() {
 		//Regular pie chart example
 		nv.addGraph(function() {
-			var chart = nv.models.pieChart().x(function(d) {
-				return d.label;
-			}).y(function(d) {
-				return d.value;
-			}).showLabels(true).color(d3.scale.myColors().range());;
+			var myColors = ["#006CB9", "#BFBFBF", "#4BC4FE"];
+			var tooltip = function(key, y, e, graph) {
+        return '<h3>' + key + '</h3>' +
+               '<p>' +  y + ' % </p>'
+      }
+	    d3.scale.myColors = function() {
+	    	return d3.scale.ordinal().range(myColors);
+	    };
+			var chart = nv.models.pieChart()
+			.x(function(d) {return d.label;})
+			.y(function(d) {return d.value;})
+			.tooltips(false)        //Don't show tooltips
+			//.showLabels(true)
+      .labelType("percent")
+			.showLabels(true).color(d3.scale.myColors().range());
 
-			d3.select("#chart-9 svg").datum(exampleData()).transition().duration(350).call(chart);
+			d3.select("#chart-9 svg").datum(exampleDataPie()).transition().duration(350).call(chart);
 
 			return chart;
 		});
 
 		//Donut chart example
 		nv.addGraph(function() {
-			var chart = nv.models.pieChart().x(function(d) {
-				return d.label;
-			}).y(function(d) {
-				return d.value;
-			}).showLabels(true)//Display pie labels
-			.labelThreshold(.05)//Configure the minimum slice size for labels to show up
-			.labelType("percent")//Configure what type of data to show in the label. Can be "key", "value" or "percent"
-			.donut(true)//Turn on Donut mode. Makes pie chart look tasty!
-			.donutRatio(0.40)//Configure how big you want the donut hole size to be.
-			.color(colorFunction());
+		var myColors = ["#006CB9", "#BFBFBF", "#4BC4FE"];
+	    d3.scale.myColors = function() {
+	    	return d3.scale.ordinal().range(myColors);
+	    };
+  var chart = nv.models.pieChart()
+      .x(function(d) { return d.label })
+      .y(function(d) { return d.value })
+      .showLabels(true)
+      .labelType("percent")
+      .tooltips(false)        //Don't show tooltips
+      .donut(true)          //Turn on Donut mode. Makes pie chart look tasty!
+      .donutRatio(0.55)     //Configure how big you want the donut hole size to be.
+      .showLabels(true).color(d3.scale.myColors().range());
 
-			d3.select("#chart-10 svg").datum(exampleData()).transition().duration(350).call(chart);
+			d3.select("#chart-10 svg").datum(exampleDataDonut()).transition().duration(350).call(chart);
 
 			return chart;
 		});
 
 		//Pie chart example data. Note how there is only a single array of key-value pairs.
-		function exampleData() {
-			return [{
-				"label" : "One",
-				"value" : 29.765957771107
-			}, {
-				"label" : "Two",
-				"value" : 0
-			}, {
-				"label" : "Three",
-				"value" : 32.807804682612
-			}, {
-				"label" : "Four",
-				"value" : 196.45946739256
-			}, {
-				"label" : "Five",
-				"value" : 0.19434030906893
-			}, {
-				"label" : "Six",
-				"value" : 98.079782601442
-			}, {
-				"label" : "Seven",
-				"value" : 13.925743130903
-			}, {
-				"label" : "Eight",
-				"value" : 5.1387322875705
-			}];
+		function exampleDataDonut() {
+			return  [
+      {
+        "label": "OLA",
+        "value" : 50
+      } ,
+
+      {
+        "label": "HCP initiated",
+        "value" : 39
+      } ,
+      {
+        "label": "Others",
+        "value" : 11
+      }];
+		}
+		function exampleDataPie() {
+			return  [
+      {
+        "label": "CEFPC",
+        "value" : 65
+      } ,
+
+      {
+        "label": "FMOQ",
+        "value" : 25
+      } ,
+      {
+        "label": "Main Pro c",
+        "value" : 10
+      }];
 		}
 
 	};
