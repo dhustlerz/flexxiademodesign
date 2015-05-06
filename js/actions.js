@@ -574,8 +574,8 @@ jQuery(window).ready( function() {
 
 // animateNumber accepts same arguments, as animate does
 // it adds only 'number' and 'numberStep' params
-var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',');
-$('.animate-number').animateNumber(
+var comma_separator_number_step = jQuery.animateNumber.numberStepFactories.separator(',');
+jQuery('.animate-number').animateNumber(
   {
     number: 417,
     numberStep: comma_separator_number_step
@@ -583,7 +583,7 @@ $('.animate-number').animateNumber(
 
   5000
 );
-$('.animate-number-1').animateNumber(
+jQuery('.animate-number-1').animateNumber(
   {
     number: 2169,
     numberStep: comma_separator_number_step
@@ -591,25 +591,25 @@ $('.animate-number-1').animateNumber(
 
   5000
 );
-$('.animate-number-2').animateNumber(
+jQuery('.animate-number-2').animateNumber(
   {
     number: 14,
     //numberStep: comma_separator_number_step
-    //$(".animate-number-3").text('+'+number);
+    //jQuery(".animate-number-3").text('+'+number);
     },
 
   5000
 );
 var decimal_places = 2;
 var decimal_factor = decimal_places === 0 ? 1 : decimal_places * 10;
-$('.animate-number-3').animateNumber(
+jQuery('.animate-number-3').animateNumber(
 
    {
       number: 4.64 * decimal_factor,
 
       numberStep: function(now, tween) {
         var floored_number = Math.floor(now) / decimal_factor,
-            target = $(tween.elem);
+            target = jQuery(tween.elem);
 
         if (decimal_places > 0) {
           // force decimal places even if they are 0
@@ -619,11 +619,13 @@ $('.animate-number-3').animateNumber(
           floored_number = floored_number.toString().replace('.', ',');
         }
 
-        $(".animate-number-3").text(floored_number);
+        jQuery(".animate-number-3").text(floored_number);
       }
     },
     5000
 );
 
 });
+
+
     /* EOF ACCORDION */
