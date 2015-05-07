@@ -7530,3 +7530,10 @@ li.ext_zip {
   color: #ffffff;
   line-height: 2;
  }
+.xe-progress {
+  height: 2px;
+  position: relative;
+  background: rgba(0, 0, 0, 0.1);
+  margin: 0 30px;
+  margin-top: 10px;
+}
