@@ -7537,3 +7537,11 @@ li.ext_zip {
   margin: 0 30px;
   margin-top: 10px;
 }
+.xe-progress-fill {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: #fff;
+}
