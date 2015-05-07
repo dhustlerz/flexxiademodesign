@@ -111,7 +111,7 @@ $output.='<div class="page-content-wrap ">';
                     /*--------------------------------------------------------------------------------------*/
                       $output.='<div class="dashpage-square-number-left height-26 ">';
                         $output.='<div class="xe-progress ">';
-                          $output.='<span class="xe-progress-fill" data-fill-from="0" data-fill-to="56" data-fill-unit="" data-fill-property="width" data-fill-duration="2" data-fill-easing="true" style="width:100px;;"></span>';
+                          $output.='<span class="xe-progress-fill" data-fill-from="0" data-fill-to="56" data-fill-unit="" data-fill-property="width" data-fill-duration="2" data-fill-easing="true" style="width:65%"></span>';
                           $output.='<span class="xe-progress-fill" data-fill-from="0" data-fill-to="56"></span>';
                         $output.='</div>';
                       $output.='</div>';
@@ -166,7 +166,7 @@ $output.='<div class="page-content-wrap ">';
                   /*--------------------------------------------------------------------------------------*/
                     $output.='<div class="dashpage-square-number-left height-26 ">';
                       $output.='<div class="xe-progress ">';
-                        $output.='<span class="xe-progress-fill" data-fill-from="0" data-fill-to="56" data-fill-unit="" data-fill-property="width" data-fill-duration="2" data-fill-easing="true" style="width:200px;;"></span>';
+                        $output.='<span class="xe-progress-fill" data-fill-from="0" data-fill-to="56" data-fill-unit="" data-fill-property="width" data-fill-duration="2" data-fill-easing="true" style="width:50%;"></span>';
                         $output.='<span class="xe-progress-fill" data-fill-from="0" data-fill-to="56"></span>';
                       $output.='</div>';
                     $output.='</div>';
@@ -202,7 +202,7 @@ $output.='<div class="page-content-wrap ">';
                     $output.='<div class="col-md-6">';
                     /*--------------------------------------------------------------------------------------*/
                       $output.='<div class="dashpage-square-number-top padding-top-10 padding-bottom-10">';
-                        $output.='<div class="animate-number h3 line-height-1-5">1,530</div>';
+                        $output.='<div class="animate-number-2 h3 line-height-1-5">1,530</div>';
                         $output.='<div class="h6 padding-top-6">Total Attendees</div>';
                       $output.='</div>';
                     /*--------------------------------------------------------------------------------------*/
@@ -213,13 +213,13 @@ $output.='<div class="page-content-wrap ">';
                 $output.='<div class="row  bg-0173B2 margin-top-12">';
                   $output.='<div class=" col-md-12 padding-top-12">';
                   /*--------------------------------------------------------------------------------------*/
-                    $output.='<div class="col-md-1 col-xs-1 "><span class="font-size-18 color-fff col-centered">88.3</span></div>';
+                    $output.='<div class="col-md-1 col-xs-1 "><span class="font-size-18 color-fff col-centered">88.3%</span></div>';
 
                     $output.='<div class=" col-md-11 col-xs-11">';
                     /*--------------------------------------------------------------------------------------*/
                       $output.='<div class="dashpage-square-number-left height-26 ">';
                         $output.='<div class="xe-progress ">';
-                          $output.='<span class="xe-progress-fill" data-fill-from="0" data-fill-to="56" data-fill-unit="" data-fill-property="width" data-fill-duration="2" data-fill-easing="true" style="width:150px;;"></span>';
+                          $output.='<span class="xe-progress-fill" data-fill-from="0" data-fill-to="56" data-fill-unit="" data-fill-property="width" data-fill-duration="2" data-fill-easing="true" style="width:70%;"></span>';
                           $output.='<span class="xe-progress-fill" data-fill-from="0" data-fill-to="56"></span>';
                         $output.='</div>';
                       $output.='</div>';
@@ -432,6 +432,6 @@ $output.='</div>';
  * END PAGE CONTENT WRAPPER
  */
 $output.='</div>';
-printf($output);
+print($output);
 
 ?>
