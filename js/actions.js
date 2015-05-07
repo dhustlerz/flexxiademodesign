@@ -585,7 +585,7 @@ jQuery('.animate-number').animateNumber(
 );
 jQuery('.animate-number-1').animateNumber(
   {
-    number: 2169,
+    number: 1275,
     numberStep: comma_separator_number_step
     },
 
@@ -593,8 +593,8 @@ jQuery('.animate-number-1').animateNumber(
 );
 jQuery('.animate-number-2').animateNumber(
   {
-    number: 14,
-    //numberStep: comma_separator_number_step
+    number: 1530,
+    numberStep: comma_separator_number_step
     //jQuery(".animate-number-3").text('+'+number);
     },
 
