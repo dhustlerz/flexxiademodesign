@@ -8,8 +8,8 @@
              // END PAGE SIDEBAR -->
 
              // PAGE CONTENT -->
-            include 'content.inc.php';
-            // END PAGE CONTENT -->
+             include 'content.inc.php';
+             // END PAGE CONTENT -->
 
 
             ?>
