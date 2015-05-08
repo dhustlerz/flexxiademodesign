@@ -7,7 +7,7 @@ $sidebar_output.='<div class="page-sidebar bg-19283d">';
 	 */
 	$sidebar_output.='<ul class="x-navigation page-navigation-top-fixed">';
    $sidebar_output.='<li class="xn-logo">';
-					$sidebar_output.='<a href="index.php">Flexxia</a>';
+					$sidebar_output.='<a href="dashboard.php">Flexxia</a>';
 					$sidebar_output.='<a href="#" class="x-navigation-control"></a>';
 			$sidebar_output.='</li>';
 			/**
@@ -45,7 +45,7 @@ $sidebar_output.='<div class="page-sidebar bg-19283d">';
 
 			$sidebar_output.='<li class="xn-title">Navigation</li>';
 			$sidebar_output.='<li class="active">';
-					$sidebar_output.='<a href="index.php"><span class="fa fa-desktop"></span><span class="xn-text">Dashboard</span></a>';
+					$sidebar_output.='<a href="dashboard.php"><span class="fa fa-desktop"></span><span class="xn-text">Dashboard</span></a>';
 			$sidebar_output.='</li>';
 			$sidebar_output.='<li class="xn-openable">';
 					$sidebar_output.='<li>';
