@@ -78,7 +78,7 @@
         <script type="text/javascript" src="js/plugins.js"></script>
         <script type="text/javascript" src="js/actions.js"></script>
 
-        // Only select date module needs demo_dasboard.js
+
         <script type="text/javascript" src="js/demo_dashboard.js"></script>
         <!-- END TEMPLATE -->
          <!-- START D3V3-->

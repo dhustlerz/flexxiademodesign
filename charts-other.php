@@ -33,13 +33,13 @@
                 <ul class="breadcrumb">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Charts</a></li>
-                    <li class="active">Other</li>
+                    <li class="active"> Circular Gauge </li>
                 </ul>
                 <!-- END BREADCRUMB -->
 
                 <!-- PAGE TITLE -->
                 <div class="page-title">
-                    <h2><span class="fa fa-arrow-circle-o-left"></span> Other Charts</h2>
+                    <h2><span class="fa fa-arrow-circle-o-left"></span> Circular Gauge </h2>
                 </div>
                 <!-- END PAGE TITLE -->
 
@@ -51,7 +51,7 @@
                         <div class="col-md-12">
 
                             <!-- START SPARKLINE CHARTS -->
-                            <div class="panel panel-default">
+                    <!--         <div class="panel panel-default">
                                 <div class="panel-heading">
                                     <h3 class="panel-title">Sparkline Charts</h3>
                                 </div>
@@ -79,13 +79,13 @@
                                         </tr>
                                     </table>
                                 </div>
-                            </div>
+                            </div> -->
                             <!-- END SPARKLINE CHARTS -->
 
                             <!-- START KNOB SLIDER -->
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <h3 class="panel-title">Knob Slider</h3>
+                                    <h3 class="panel-title"> Circular Gauge </h3>
                                 </div>
                                 <div class="panel-body">
 

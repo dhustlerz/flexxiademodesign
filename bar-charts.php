@@ -33,60 +33,31 @@
                 <ul class="breadcrumb">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Charts</a></li>
-                    <li class="active">NVD3</li>
+                    <li class="active">Bar Charts</li>
                 </ul>
                 <!-- END BREADCRUMB -->
 
                 <!-- PAGE TITLE -->
                 <div class="page-title">
-                    <h2><span class="fa fa-arrow-circle-o-left"></span> NVD3 Charts</h2>
+                    <h2><span class="fa fa-arrow-circle-o-left"></span> Bar Charts</h2>
                 </div>
                 <!-- END PAGE TITLE -->
 
                 <!-- PAGE CONTENT WRAPPER -->
                 <div class="page-content-wrap">
 
-                    <div class="row">
-                        <div class="col-md-6">
 
-                            <!-- START SIMPLE LINE CHART -->
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h3 class="panel-title">Simple Line Chart</h3>
-                                </div>
-                                <div class="panel-body">
-                                    <div id="chart-1" style="height: 300px;"><svg></svg></div>
-                                </div>
-                            </div>
-                            <!-- END SIMPLE LINE CHART -->
-
-                        </div>
-                        <div class="col-md-6">
-
-                            <!-- START SCATTER CHART -->
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h3 class="panel-title">Scatter / Bubble Chart</h3>
-                                </div>
-                                <div class="panel-body">
-                                    <div id="chart-2" style="height: 300px;"><svg></svg></div>
-                                </div>
-                            </div>
-                            <!-- END SCATTER CHART -->
-
-                        </div>
-                    </div>
 
                     <div class="row">
                         <div class="col-md-6">
 
                             <!-- START STACKED AREA CHART -->
-                            <div class="panel panel-default">
+                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <h3 class="panel-title">Stacked Area Chart</h3>
+                                    <h3 class="panel-title">Bar Chart</h3>
                                 </div>
                                 <div class="panel-body">
-                                    <div id="chart-3" style="height: 300px;"><svg></svg></div>
+                                    <div id="morris-bar-example" style="height: 300px;"></div>
                                 </div>
                             </div>
                             <!-- END STACKED AREA CHART -->
@@ -139,69 +110,8 @@
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-md-6">
 
-                            <!-- START LINE AND BAR CHART -->
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h3 class="panel-title">Cumulative Line Chart</h3>
 
-                                </div>
-                                <div class="panel-body">
-                                    <div id="chart-7" style="height: 300px;"><svg></svg></div>
-                                </div>
-                            </div>
-                            <!-- END LINE AND BAR CHART -->
-
-                        </div>
-                        <div class="col-md-6">
-
-                            <!-- START CUMULATIVE CHART -->
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h3 class="panel-title">Line Chart with View Finder</h3>
-                                </div>
-                                <div class="panel-body">
-                                    <div id="chart-8" style="height: 300px;"><svg></svg></div>
-                                </div>
-                            </div>
-                            <!-- END CUMULATIVE CHART -->
-
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-6">
-
-                            <!-- START REGULAR PIE CHART -->
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h3 class="panel-title">Regular pie chart</h3>
-
-                                </div>
-                                <div class="panel-body">
-                                    <div id="chart-9" style="height: 300px;"><svg></svg></div>
-                                </div>
-                            </div>
-                            <!-- END REGULAR PIE CHART -->
-
-                        </div>
-                        <div class="col-md-6">
-
-                            <!-- START DOUNT CHART -->
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h3 class="panel-title">Donut chart</h3>
-                                </div>
-                                <div class="panel-body">
-                                    <div id="chart-10" style="height: 300px;"><svg></svg></div>
-                                </div>
-                            </div>
-                            <!-- END DOUNT CHART -->
-
-                        </div>
-                    </div>
 
 
                 </div>
@@ -236,7 +146,7 @@
         <audio id="audio-fail" src="audio/fail.mp3" preload="auto"></audio>
         <!-- END PRELOADS -->
 
-    <!-- START SCRIPTS -->
+        <!-- START SCRIPTS -->
         <!-- START PLUGINS -->
         <script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
         <script type="text/javascript" src="js/plugins/jquery/jquery-ui.min.js"></script>
@@ -244,11 +154,22 @@
         <!-- END PLUGINS -->
 
         <!-- START THIS PAGE PLUGINS-->
+
         <script type='text/javascript' src='js/plugins/icheck/icheck.min.js'></script>
         <script type="text/javascript" src="js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js"></script>
 
+        <!-- START nvd3 charts Plugin -->
         <script type="text/javascript" src="js/plugins/nvd3/lib/d3.v3.js"></script>
         <script type="text/javascript" src="js/plugins/nvd3/nv.d3.min.js"></script>
+        <script type="text/javascript" src="js/demo_charts_nvd3.js"></script>
+        <!-- END nvd3 charts plugin -->
+
+        <!-- START Morris charts Plugin -->
+        <script type="text/javascript" src="js/plugins/morris/raphael-min.js"></script>
+        <script type="text/javascript" src="js/plugins/morris/morris.min.js"></script>
+        <script type="text/javascript" src="js/demo_charts_morris.js"></script>
+        <!-- END Morris charts plugin -->
+
         <!-- END THIS PAGE PLUGINS-->
 
         <!-- START TEMPLATE -->
@@ -256,7 +177,7 @@
 
         <script type="text/javascript" src="js/plugins.js"></script>
         <script type="text/javascript" src="js/actions.js"></script>
-        <script type="text/javascript" src="js/demo_charts_nvd3.js"></script>
+
 
         <!-- END TEMPLATE -->
     <!-- END SCRIPTS -->
