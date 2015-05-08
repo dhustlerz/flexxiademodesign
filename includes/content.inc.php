@@ -22,7 +22,7 @@ $output.='<div class="page-content">';
 
       $output.='</li>';
       $output.='<!-- SEARCH -->';
-       $output.='<li class="xn-search pull-right">';
+       $output.='<li class="xn-search">';
           $output.='<form role="form">';
               $output.='<input type="text" name="search" placeholder="Search..."/>';
           $output.='</form>';
@@ -30,7 +30,7 @@ $output.='<div class="page-content">';
     $output.='</ul>';
       /**
        * START X-NAVIGATION VERTICAL 2
-       * we did'nt call x-navigation.inc.php because of some rendering/displaying issues
+       *
        */
     $output.='<div class="bg-F5F5F5">';
     $output.='<ul class=" x-navigation x-navigation-horizontal x-navigation-panel" style="background-color:#F5F5F5">';
@@ -107,7 +107,7 @@ $output.='<div class="page-content-wrap ">';
                   /*--------------------------------------------------------------------------------------*/
                     $output.='<div class="col-md-1 col-xs-1 "><span class="font-size-18 color-fff col-centered">4.52</span></div>';
 
-                    $output.='<div class=" col-md-11 col-xs-11">';
+                    $output.='<div class=" col-md-11 col-xs-12">';
                     /*--------------------------------------------------------------------------------------*/
                       $output.='<div class="dashpage-square-number-left height-26 ">';
                         $output.='<div class="xe-progress ">';

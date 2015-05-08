@@ -563,69 +563,89 @@ Object.size = function(obj) {
     }
     return size;
 };
+
+var morrisCharts = function() {
+        Morris.Bar({
+        element: 'morris-bar-example',
+        data: [
+            { y: '2006', a: 100, b: 90 },
+            { y: '2007', a: 75,  b: 65 },
+            { y: '2008', a: 50,  b: 40 },
+            { y: '2009', a: 75,  b: 65 },
+            { y: '2010', a: 50,  b: 40 },
+            { y: '2011', a: 75,  b: 65 },
+            { y: '2012', a: 100, b: 90 }
+        ],
+        xkey: 'y',
+        ykeys: ['a', 'b'],
+        labels: ['Series A', 'Series B'],
+        barColors: ['#7A92A3', '#0B62A4']
+    });
+}();
+
 /* EOF NEW OBJECT(GET SIZE OF ARRAY) */
 
 
-    /* Animate number
-     * @Author jP flexxia
-     * To animate number
-     */
-jQuery(window).ready( function() {
+//     /* Animate number
+//      * @Author jP flexxia
+//      * To animate number
+//      */
+// jQuery(document).ready( function() {
 
-// animateNumber accepts same arguments, as animate does
-// it adds only 'number' and 'numberStep' params
-var comma_separator_number_step = jQuery.animateNumber.numberStepFactories.separator(',');
-jQuery('.animate-number').animateNumber(
-  {
-    number: 417,
-    numberStep: comma_separator_number_step
-    },
+// // animateNumber accepts same arguments, as animate does
+// // it adds only 'number' and 'numberStep' params
+// var comma_separator_number_step = jQuery.animateNumber.numberStepFactories.separator(',');
+// jQuery('.animate-number').animateNumber(
+//   {
+//     number: 417,
+//     numberStep: comma_separator_number_step
+//     },
 
-  5000
-);
-jQuery('.animate-number-1').animateNumber(
-  {
-    number: 1275,
-    numberStep: comma_separator_number_step
-    },
+//   5000
+// );
+// jQuery('.animate-number-1').animateNumber(
+//   {
+//     number: 1275,
+//     numberStep: comma_separator_number_step
+//     },
 
-  5000
-);
-jQuery('.animate-number-2').animateNumber(
-  {
-    number: 1530,
-    numberStep: comma_separator_number_step
-    //jQuery(".animate-number-3").text('+'+number);
-    },
+//   5000
+// );
+// jQuery('.animate-number-2').animateNumber(
+//   {
+//     number: 1530,
+//     numberStep: comma_separator_number_step
+//     //jQuery(".animate-number-3").text('+'+number);
+//     },
 
-  5000
-);
-var decimal_places = 2;
-var decimal_factor = decimal_places === 0 ? 1 : decimal_places * 10;
-jQuery('.animate-number-3').animateNumber(
+//   5000
+// );
+// var decimal_places = 2;
+// var decimal_factor = decimal_places === 0 ? 1 : decimal_places * 10;
+// jQuery('.animate-number-3').animateNumber(
 
-   {
-      number: 4.64 * decimal_factor,
+//    {
+//       number: 4.64 * decimal_factor,
 
-      numberStep: function(now, tween) {
-        var floored_number = Math.floor(now) / decimal_factor,
-            target = jQuery(tween.elem);
+//       numberStep: function(now, tween) {
+//         var floored_number = Math.floor(now) / decimal_factor,
+//             target = jQuery(tween.elem);
 
-        if (decimal_places > 0) {
-          // force decimal places even if they are 0
-          floored_number = floored_number.toFixed(decimal_places);
+//         if (decimal_places > 0) {
+//           // force decimal places even if they are 0
+//           floored_number = floored_number.toFixed(decimal_places);
 
-          // replace '.' separator with ','
-          floored_number = floored_number.toString().replace('.', ',');
-        }
+//           // replace '.' separator with ','
+//           floored_number = floored_number.toString().replace('.', ',');
+//         }
 
-        jQuery(".animate-number-3").text(floored_number);
-      }
-    },
-    5000
-);
+//         jQuery(".animate-number-3").text(floored_number);
+//       }
+//     },
+//     5000
+// );
 
-});
+// });
 
 
     /* EOF ACCORDION */
