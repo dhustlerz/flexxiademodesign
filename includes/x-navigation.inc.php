@@ -11,9 +11,9 @@
       $xnavigation_output.='<!-- END SEARCH -->';
 
       $xnavigation_output.='<!-- SIGN OUT -->';
-      $xnavigation_output.='<li class="xn-icon-button pull-right">';
-          $xnavigation_output.='<a href="#" class="mb-control" data-box="#mb-signout"><span class="fa fa-sign-out"></span></a>';
-      $xnavigation_output.='</li>';
+      // $xnavigation_output.='<li class="xn-icon-button pull-right">';
+      //     $xnavigation_output.='<a href="#" class="mb-control" data-box="#mb-signout"><span class="fa fa-sign-out"></span></a>';
+      // $xnavigation_output.='</li>';
       $xnavigation_output.='<!-- END SIGN OUT -->';
 
       $xnavigation_output.='</li>';
