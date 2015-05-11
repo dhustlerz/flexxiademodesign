@@ -23,14 +23,14 @@ $sidebar_output.='<div class="page-sidebar bg-19283d">';
 			 */
 			$sidebar_output.='<li class="xn-profile">';
 	        $sidebar_output.='<a href="#" class="profile-mini">';
-	            $sidebar_output.='<img  src="assets/images/users/user0.png" alt="John Doe"/>';
+	            $sidebar_output.='<img  src="assets/images/users/user0.png" alt="Chris "/>';
 	        $sidebar_output.='</a>';
 	        $sidebar_output.='<div class= "profile">';
 	            $sidebar_output.='<div class="profile-image">';
 	                $sidebar_output.='<img style="width: 60px;" src="assets/images/users/user0.png" alt="John Doe"/>';
 	            $sidebar_output.='</div>';
 	            $sidebar_output.='<div class="profile-data">';
-	                $sidebar_output.='<div class="profile-data-name">Chris Dodd</div>';
+	                $sidebar_output.='<div class="profile-data-name"><span>Chris Dodd</span><a href="#" class="mb-control padding-left-12 color-fff" data-box="#mb-signout"><span class="fa fa-gear"></span></a></div>';
 	                $sidebar_output.='<div class="profile-data-title">Administrator</div>';
 	            $sidebar_output.='</div>';
 	            // $sidebar_output.='<div class="profile-controls">';
@@ -43,7 +43,7 @@ $sidebar_output.='<div class="page-sidebar bg-19283d">';
 			 * END USER PROFILE
 			 */
 
-			$sidebar_output.='<li class="xn-title">Navigation</li>';
+			//$sidebar_output.='<li class="xn-title">Navigation</li>';
 			$sidebar_output.='<li class="active">';
 					$sidebar_output.='<a href="dashboard.php"><span class="fa fa-desktop"></span><span class="xn-text">Dashboard</span></a>';
 			$sidebar_output.='</li>';
@@ -76,7 +76,7 @@ $sidebar_output.='<div class="page-sidebar bg-19283d">';
 					$sidebar_output.='</li>';
 			$sidebar_output.='</li>';
 
-			$sidebar_output.='<li class="xn-title">Components</li>';
+			//$sidebar_output.='<li class="xn-title">Components</li>';
 			$sidebar_output.='<li class="xn-openable">';
 					$sidebar_output.='<a href="#"><span class="fa fa-table"></span><span class="xn-text">Tables</span></a>';
 					$sidebar_output.='<ul>';

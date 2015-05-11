@@ -15,9 +15,9 @@ $output.='<div class="page-content">';
       $output.='<!-- END SEARCH -->';
 
       $output.='<!-- SIGN OUT -->';
-      $output.='<li class="xn-icon-button pull-right">';
-          $output.='<a href="#" class="mb-control" data-box="#mb-signout"><span class="fa fa-sign-out"></span></a>';
-      $output.='</li>';
+      // $output.='<li class="xn-icon-button pull-right">';
+      //     $output.='<a href="#" class="mb-control" data-box="#mb-signout"><span class="fa fa-sign-out"></span></a>';
+      // $output.='</li>';
       $output.='<!-- END SIGN OUT -->';
 
       $output.='</li>';
