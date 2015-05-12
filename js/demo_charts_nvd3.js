@@ -241,6 +241,7 @@ var nvd3Charts = function() {
 					left :100
 				}).showValues(true)//Show bar value next to each bar.
 				.tooltips(true)//Show tooltips on hover.
+
 				.transitionDuration(350)
         .showControls(false)
         .color(['#aec7e8', '#7b94b5'])
@@ -272,7 +273,8 @@ var nvd3Charts = function() {
 					return i;
 				}).y(function(d, i) {
 					return d[1];
-				}).color(d3.scale.myColors().range());;
+				}).color(d3.scale.myColors().range());
+
 
 				chart.xAxis.tickFormat(function(d) {
 					var dx = data[0].values[d] && data[0].values[d][0] || 0;
@@ -305,13 +307,17 @@ var nvd3Charts = function() {
 				}).y(function(d) {
 					return d[1] / 100;
 				})//adjusting, 100% is 1.00, not 100 as it is in the data
+				.showControls(false)
 				.color(d3.scale.myColors().range()).useInteractiveGuideline(true);
 
-				chart.xAxis.tickValues([1078030800000, 1122782400000, 1167541200000, 1251691200000]).tickFormat(function(d) {
+				chart.xAxis.tickValues([1078030800000, 1122782400000, 1167541200000, 1251691200000])
+
+				.tickFormat(function(d) {
 					return d3.time.format('%x')(new Date(d));
 				});
 
-				chart.yAxis.tickFormat(d3.format(',.1%'));
+				chart.xAxis.tickFormat(d3.format(',f'));
+
 
 				d3.select('#chart-7 svg').datum(data).call(chart);
 
@@ -397,6 +403,40 @@ var nvd3Charts = function() {
 
 			return chart;
 		});
+
+	var startChart10 = function() {
+		d3.json('assets/plugins/nvd3/multiBarHorizontalData.json', function(data) {
+			nv.addGraph(function() {
+				var chart = nv.models.multiBarHorizontalChart()
+
+				.x(function(d) {return d.label;})
+				.y(function(d) {return d.value;})
+
+				.margin({
+					top : 30,
+					right : 20,
+					bottom : 50,
+					left :100
+				}).showValues(true)//Show bar value next to each bar.
+				.tooltips(true)//Show tooltips on hover.
+
+				.transitionDuration(350)
+        .showControls(false)
+        .color(['#aec7e8', '#7b94b5'])
+        .stacked(true);
+				//Allow user to switch between "Grouped" and "Stacked" mode.
+
+				chart.yAxis.tickFormat(d3.format(',f'));
+
+				d3.select('#chart-10 svg').datum(data).call(chart).data(stackedData);
+
+				nv.utils.windowResize(chart.update);
+
+				return chart;
+			});
+		});
+
+	};
 
 		//Pie chart example data. Note how there is only a single array of key-value pairs.
 		function exampleDataDonut() {

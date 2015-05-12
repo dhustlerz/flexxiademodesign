@@ -244,8 +244,10 @@ $(function() {
                 $(".knob").knob({
                     'dynamicDraw': true,
                     'draw' : function () {
-                    $(this.i).val(this.cv + '%')
+                    $(this.i).val(this.cv + '%');
+                    $(this.i).css("font-size","24px");
                     }
+                //$(".knob").css("font-size","15px");
                 });
             }
 
