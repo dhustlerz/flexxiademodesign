@@ -270,74 +270,27 @@ $output.='<div class="page-content-wrap ">';
 
     $output.='<div class="row margin-top-24" >';
 
-    $output.='<div class="col-md-6 " style="">';
-            /**
-             * START REGULAR PIE CHART
-             */
-            $output.='<div class="panel ">';
-            $output.='<div class=" panel-header">Programs Total by Month (Jan-Dec) </div>';
-                $output.='<div class="panel-body bg-ffffff" style="height: 300px;">';
-                    $output.='<div class="" id="chart-5" style="height: 300px;"><svg></svg></div>';
-                $output.='</div>';
-            $output.='</div>';
-            /**
-             * END REGULAR PIE CHART
-             */
+        $output.='<div class="col-md-6 " style="">';
+          /**
+           * START REGULAR PIE CHART
+           */
+          $output.='<div class="panel ">';
+          $output.='<div class=" panel-header">Business Unit Performance </div>';
+              $output.='<div class="panel-body bg-ffffff" style="height: 300px;">';
+                  $output.='<div class="" id="chart-5" style="height: 300px;"><svg></svg></div>';
+              $output.='</div>';
+          $output.='</div>';
+          /**
+           * END REGULAR PIE CHART
+           */
         $output.='</div>';
-        // $output.='<div class="col-md-6 ">';
-        //     $output.='<div class="panel panel-default ">';
-        //       $output.='<div class=" panel-header">Programs Total by Month (Jan-Dec) </div>';
-        //       $output.='<div class="row bg-ffffff  padding-top-30"  style="height: 300px;"">';
-        //           // $output.='<div class="col-md-6 ">';
-        //           // /**
-        //           //  * START STACKED CHART
-        //           //  */
 
-        //           //     $output.='<div class="panel-body ">';
-        //           //             $output.='<input class="knob" data-min="0" data-max="100" data-width="180" data-height="180" data-thickness=".1" data-fgColor="#8dc63f" data-bgColor="#ebebeb" value="60">';
-
-        //           //     $output.='</div>';
-
-        //           // /**
-        //           //  * END STACKED CHART
-        //           //  */
-        //           // $output.='</div>';
-        //           // $output.='<div class="col-md-6 ">';
-        //           // /**
-        //           //  * START STACKED CHART
-        //           //  */
-
-        //           //     $output.='<div class="panel-body ">';
-        //           //         $output.='<input class="knob" data-min="0" data-max="100" data-width="180" data-height="180" data-thickness=".1" data-fgColor="#DA5D74" data-bgColor="#ebebeb" value="78">';
-        //           //     $output.='</div>';
-
-
-        //           // /**
-        //           //  * END STACKED CHART
-        //           //  */
-        //     /**
-        //      * START REGULAR PIE CHART
-        //      */
-
-        //         $output.='<div class="panel-body bg-ffffff" >';
-        //             $output.='<div class="" id="chart-5" style="height: 300px;"><svg></svg></div>';
-        //         $output.='</div>';
-
-        //     /**
-        //      * END REGULAR PIE CHART
-        //      */
-
-        //           //$output.='</div>';
-        //       $output.='</div>';
-        //     $output.='</div>';
-        // $output.='</div>';
-
-         $output.='<div class="col-md-6 " style="">';
+        $output.='<div class="col-md-6 " style="">';
             /**
              * START REGULAR PIE CHART
              */
             $output.='<div class="panel ">';
-            $output.='<div class=" panel-header">Programs Total by Month (Jan-Dec) </div>';
+            $output.='<div class=" panel-header">Meeting Activity YTD </div>';
                 $output.='<div class="panel-body bg-ffffff padding-0">';
                     $output.='<div class="" id="morris-line-example" style="height: 300px;"><svg></svg></div>';
                 $output.='</div>';
@@ -351,28 +304,46 @@ $output.='<div class="page-content-wrap ">';
     $output.='</div>';
 
     $output.='<div class="row margin-top-24">';
-          $output.='<div class="col-md-6 ">';
+          $output.='<div class="col-md-4 ">';
             /**
-             * START STACKED CHART
+             * START PIE CHART
              */
             $output.='<div class="panel ">';
-            $output.='<div class=" panel-header">Program/Evaluation by Business Unit</div>';
+            $output.='<div class=" panel-header">Accredited Program Breakdown</div>';
                 $output.='<div class="panel-body">';
                     $output.='<div id="chart-9" style="height: 300px;"><svg></svg></div>';
                 $output.='</div>';
             $output.='</div>';
             /**
-             * END STACKED CHART
+             * END PIE CHART
              */
         $output.='</div>';
-          $output.='<div class="col-md-6 ">';
+
+        $output.='<div class="col-md-4 ">';
            /**
              * START REGULAR PIE CHART
              */
             $output.='<div class="panel ">';
-            $output.='<div class=" panel-header">Programs Total by Month (Jan-Dec) </div>';
+            $output.='<div class=" panel-header">Non-Accredited Program Breakdown </div>';
                 $output.='<div class="panel-body bg-ffffff" ">';
                     $output.='<div class="" id="chart-10" style="height: 300px;"><svg></svg></div>';
+                $output.='</div>';
+            $output.='</div>';
+            /**
+             * END REGULAR PIE CHART
+             */
+        $output.='</div>';
+
+        $output.='<div class="col-md-4 text-center" >';
+            /**
+             * START REGULAR PIE CHART
+             */
+            $output.='<div class="panel">';
+            $output.='<div class=" panel-header">Target Audience Participation</div>';
+                $output.='<div class="panel-body bg-ffffff padding-0">';
+                    $output.='<div class="padding-top-80  font-size-14"  style="height: 330px;">';
+                    $output.='<input class="knob" data-width="200" data-thickness=".3" data-angleOffset="270" data-angleArc="180" data-fgColor="#0173B2" value="90"/>';
+                     $output.='</div>';
                 $output.='</div>';
             $output.='</div>';
             /**
@@ -387,6 +358,7 @@ $output.='<div class="page-content-wrap ">';
           */
         $output.='<div class="col-md-12">';
             $output.='<div class="panel panel-default">';
+            $output.='<div class=" panel-header">Regional Meeting Detail</div>';
                 $output.='<div class="panel-body panel-body-map">';
                     $output.='<div id="google_world_map_canada" style="height: 300px;"></div>';
                 $output.='</div>';
@@ -403,7 +375,7 @@ $output.='<div class="page-content-wrap ">';
               /**
                * START DEFAULT DATATABLE
                */
-              require 'simpletable.inc.php' ;
+              require 'simple-speaker-table.inc.php' ;
               /**
                * END DEFAULT DATATABLE
                */
@@ -417,7 +389,7 @@ $output.='<div class="page-content-wrap ">';
               /**
                * START DEFAULT DATATABLE
                */
-               require 'simpletable.inc.php' ;
+               require 'simple-program-table.inc.php' ;
               /**
                * END DEFAULT DATATABLE
                */

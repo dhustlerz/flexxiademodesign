@@ -111,7 +111,7 @@
                                         </div>
                                         <div class="col-md-4 text-center">
                                             <h5>Angle offset and arc</h5>
-                                            <input class="knob" data-width="150" data-cursor=true data-fgColor="#FEC558" value="29"/>
+                                            <input class="knob" data-width="150" data-angleOffset="270" data-angleArc="180" data-cursor=true data-fgColor="#FEC558" value="29"/>
                                         </div>
                                         <div class="col-md-4 text-center">
                                             <h5>5-digit values, step 1000</h5>
