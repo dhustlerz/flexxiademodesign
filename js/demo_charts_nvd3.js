@@ -316,7 +316,7 @@ var nvd3Charts = function() {
 					return d3.time.format('%x')(new Date(d));
 				});
 
-				chart.xAxis.tickFormat(d3.format(',f'));
+				chart.yAxis.tickFormat(d3.format(',.1%'));
 
 
 				d3.select('#chart-7 svg').datum(data).call(chart);
