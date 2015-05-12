@@ -310,7 +310,7 @@ var nvd3Charts = function() {
 				.showControls(false)
 				.color(d3.scale.myColors().range()).useInteractiveGuideline(true);
 
-				chart.xAxis.tickValues([1078030800000, 1122782400000, 1167541200000, 1251691200000])
+				chart.xAxis.tickValues([1078, 1122, 1167, 1251])
 
 				.tickFormat(function(d) {
 					return d3.time.format('%x')(new Date(d));
