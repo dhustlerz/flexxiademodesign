@@ -102,31 +102,32 @@ $output.='<div class="page-content-wrap ">';
                 $output.='</div>';
             $output.='</div>';
            /*--------------------------------------------------------------------------------------*/
-                $output.='<div class="row  bg-2DAAE1 margin-top-12">';
-                  $output.='<div class=" col-md-12 padding-top-12">';
-                  /*--------------------------------------------------------------------------------------*/
-                    $output.='<div class="col-md-1 col-xs-1 "><span class="font-size-18 color-fff col-centered">4.52</span></div>';
+                 $output.='<div class="row  bg-2DAAE1 margin-top-12">';
+                $output.='<div class=" col-md-12 padding-top-12">';
+                /*--------------------------------------------------------------------------------------*/
+                  $output.='<div class="col-md-1 col-xs-1 "><span class="font-size-18 color-fff col-centered">4.52</span></div>';
 
-                    $output.='<div class=" col-md-11 col-xs-12">';
-                    /*--------------------------------------------------------------------------------------*/
-                      $output.='<div class="dashpage-square-number-left height-26 ">';
-                        $output.='<div class="xe-progress ">';
-                          $output.='<span class="xe-progress-fill" data-fill-from="0" data-fill-to="56" data-fill-unit="" data-fill-property="width" data-fill-duration="2" data-fill-easing="true" style="width:65%"></span>';
-                          $output.='<span class="xe-progress-fill" data-fill-from="0" data-fill-to="56"></span>';
-                        $output.='</div>';
+                  $output.='<div class=" col-md-11 col-xs-11">';
+                  /*--------------------------------------------------------------------------------------*/
+                    $output.='<div class="dashpage-square-number-left height-26 ">';
+                      $output.='<div class="xe-progress ">';
+                        $output.='<span class="xe-progress-fill" data-fill-from="0" data-fill-to="56" data-fill-unit="" data-fill-property="width" data-fill-duration="2" data-fill-easing="true" style="width:45%;"></span>';
+                        $output.='<span class="xe-progress-fill" data-fill-from="0" data-fill-to="56"></span>';
                       $output.='</div>';
-                        // $output.='<div class="margin-top-6 margin-bottom-6"></div>';
-                        // $output.='<div class="font-size-10"></div>';
                     $output.='</div>';
-                    /*--------------------------------------------------------------------------------------*/
+                      // $output.='<div class="margin-top-6 margin-bottom-6"></div>';
+                      // $output.='<div class="font-size-10"></div>';
                   $output.='</div>';
                   /*--------------------------------------------------------------------------------------*/
-
-                  $output.='<div class="col-md-12">';
-                      $output.='<div class="padding-left-10 font-size-16 color-fff margin-bottom-8">Average Speaker Rating</div>';
-                      //$output.='<div class="font-size-10 text-center"></div>';
-                  $output.='</div>';
                 $output.='</div>';
+                /*--------------------------------------------------------------------------------------*/
+
+                $output.='<div class="col-md-12">';
+                    $output.='<div class="padding-left-10 font-size-16 color-fff margin-bottom-8">Average Speaker Rating</div>';
+                    //$output.='<div class="font-size-10 text-center"></div>';
+                $output.='</div>';
+              $output.='</div>';
+
         $output.='</div>';
         /**
          * END Total Meetings
