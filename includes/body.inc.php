@@ -54,6 +54,12 @@
         <!-- START DATATABLES PLUGINS-->
         <script type="text/javascript" src="js/plugins/datatables/jquery.dataTables.min.js"></script>
         <!-- END DATATABLES PLUGINS-->
+        <script>
+        window.onresize = function(event)
+            {
+                document.location.reload(true);
+            }
+        </script>
 
 
         <script type="text/javascript" src="js/markerclusterplus.js"></script>
@@ -80,6 +86,7 @@
 
 
         <script type="text/javascript" src="js/demo_dashboard.js"></script>
+        <script type="text/javascript" src="js/custom-charts.js"></script>
         <!-- END TEMPLATE -->
          <!-- START D3V3-->
         <script type="text/javascript" src="js/plugins/nvd3/lib/d3.v3.js"></script>
