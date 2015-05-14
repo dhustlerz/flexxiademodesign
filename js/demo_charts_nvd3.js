@@ -50,6 +50,7 @@ var nvd3Charts = function() {
 			});
 			return chart;
 		});
+
 		/**************************************
 		 * Simple test data generator
 		 */
@@ -229,7 +230,10 @@ var nvd3Charts = function() {
 	var startChart5 = function() {
 		d3.json('assets/plugins/nvd3/multiBarHorizontalData.json', function(data) {
 			nv.addGraph(function() {
-				var chart = nv.models.multiBarHorizontalChart()
+				/*
+			   * Chart one start
+				 */
+				var chart1 = nv.models.multiBarHorizontalChart()
 
 				.x(function(d) {return d.label;})
 				.y(function(d) {return d.value;})
@@ -248,17 +252,51 @@ var nvd3Charts = function() {
         .stacked(false);
 				//Allow user to switch between "Grouped" and "Stacked" mode.
 
-				chart.yAxis.tickFormat(d3.format(',f'));
+				chart1.yAxis.tickFormat(d3.format(',f'));
+				/*
+			   * Chart one ends
+				 */
+				 /*----------------------------------------------------------------------------------*/
+				 /*
+			    * Chart two start
+				  */
+				var chart2 = nv.models.multiBarHorizontalChart()
 
-				d3.select('#chart-5 svg').datum(data).call(chart);
+				.x(function(d) {return d.label2;})
+				.y(function(d) {return d.value2;})
 
-				nv.utils.windowResize(chart.update);
+				.margin({
+					top : 30,
+					right : 20,
+					bottom : 50,
+					left :100
+				}).showValues(true)//Show bar value next to each bar.
+				.tooltips(true)//Show tooltips on hover.
 
-				return chart;
+				.transitionDuration(350)
+        .showControls(false)
+        .color(['#aec7e8', '#7b94b5'])
+        .stacked(true);
+				//Allow user to switch between "Grouped" and "Stacked" mode.
+
+				chart2.yAxis.tickFormat(d3.format(',f'));
+				/*
+			   * Chart two ends
+				 */
+				 console.log(data[0].data1);
+				 console.log(data[1].data2);
+				d3.select('#chart-5 svg').datum(data[0].data1).call(chart1);
+
+				d3.select('#chart-5pt2 svg').datum(data[1].data2).call(chart2);
+
+
+
+				//return chart;
 			});
 		});
 
 	};
+
 	var startChart6 = function() {
 		d3.json("assets/plugins/nvd3/linePlusBarData.json", function(error, data) {
 			nv.addGraph(function() {
@@ -307,17 +345,13 @@ var nvd3Charts = function() {
 				}).y(function(d) {
 					return d[1] / 100;
 				})//adjusting, 100% is 1.00, not 100 as it is in the data
-				.showControls(false)
 				.color(d3.scale.myColors().range()).useInteractiveGuideline(true);
 
-				chart.xAxis.tickValues([1078, 1122, 1167, 1251])
-
-				.tickFormat(function(d) {
+				chart.xAxis.tickValues([1078030800000, 1122782400000, 1167541200000, 1251691200000]).tickFormat(function(d) {
 					return d3.time.format('%x')(new Date(d));
 				});
 
 				chart.yAxis.tickFormat(d3.format(',.1%'));
-
 
 				d3.select('#chart-7 svg').datum(data).call(chart);
 

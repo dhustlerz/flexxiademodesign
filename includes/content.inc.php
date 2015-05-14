@@ -271,7 +271,7 @@ $output.='<div class="page-content-wrap ">';
 
     $output.='<div class="row margin-top-24" >';
 
-        $output.='<div class="col-md-6 " style="">';
+        $output.='<div id="refresh" class=" col-md-6 " style="">';
           /**
            * START REGULAR PIE CHART
            */
@@ -335,14 +335,14 @@ $output.='<div class="page-content-wrap ">';
              */
         $output.='</div>';
 
-        $output.='<div class="col-md-4 text-center" >';
+        $output.='<div class="col-md-4" >';
             /**
              * START REGULAR PIE CHART
              */
             $output.='<div class="panel">';
             $output.='<div class=" panel-header">Target Audience Participation</div>';
                 $output.='<div class="panel-body bg-ffffff padding-0">';
-                    $output.='<div class="padding-top-80  font-size-14"  style="height: 330px;">';
+                    $output.='<div class="text-center padding-top-80  font-size-14"  style="height: 330px;">';
                     $output.='<input class="knob" data-width="200" data-thickness=".3" data-angleOffset="270" data-angleArc="180" data-fgColor="#0173B2" value="90"/>';
                      $output.='</div>';
                 $output.='</div>';
@@ -352,7 +352,42 @@ $output.='<div class="page-content-wrap ">';
              */
         $output.='</div>';
     $output.='</div>';
+    /*-------------------------------------------------------------------------------------------------------------*/
+    $output.='<div class="row margin-top-24" >';
 
+        $output.='<div class="col-md-6 " style="">';
+          /**
+           * START REGULAR PIE CHART
+           */
+          $output.='<div class="panel ">';
+          $output.='<div class=" panel-header">Business Unit Performance </div>';
+            $output.='<div class="panel-body bg-ffffff" style="height: 300px;">';
+                $output.='<div class="" id="chart-5pt2" style="height: 300px;"><svg></svg></div>';
+            $output.='</div>';
+          $output.='</div>';
+          /**
+           * END REGULAR PIE CHART
+           */
+        $output.='</div>';
+
+        $output.='<div class="col-md-6 " style="">';
+            /**
+             * START REGULAR PIE CHART
+             */
+            $output.='<div class="panel ">';
+            $output.='<div class=" panel-header">Meeting Activity YTD </div>';
+                $output.='<div class="panel-body bg-ffffff padding-0">';
+                    $output.='<div id="google-stacked-chart" style=" height: 300px;"></div>';
+                $output.='</div>';
+            $output.='</div>';
+            /**
+             * END REGULAR PIE CHART
+             */
+        $output.='</div>';
+
+
+    $output.='</div>';
+    /*---------------------------------------------------------------------------------------------------------------*/
     $output.='<div class="row">';
          /**
           * START GOOGLE WORLD MAP
