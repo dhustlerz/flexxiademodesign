@@ -360,7 +360,7 @@ $output.='<div class="page-content-wrap ">';
            * START REGULAR PIE CHART
            */
           $output.='<div class="panel ">';
-          $output.='<div class=" panel-header">Business Unit Performance </div>';
+          $output.='<div class=" panel-header">Educational Event by Province </div>';
             $output.='<div class="panel-body bg-ffffff" style="height: 300px;">';
                 $output.='<div class="" id="chart-5pt2" style="height: 300px;"><svg></svg></div>';
             $output.='</div>';
@@ -375,7 +375,7 @@ $output.='<div class="page-content-wrap ">';
              * START REGULAR PIE CHART
              */
             $output.='<div class="panel ">';
-            $output.='<div class=" panel-header">Meeting Activity YTD </div>';
+            $output.='<div class=" panel-header">Business Unit Provincial Exposure</div>';
                 $output.='<div class="panel-body bg-ffffff padding-0">';
                     $output.='<div id="google-stacked-chart" style=" height: 300px;"></div>';
                 $output.='</div>';
