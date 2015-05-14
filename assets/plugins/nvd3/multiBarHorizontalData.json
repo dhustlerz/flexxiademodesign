@@ -1,56 +1,159 @@
 [
   {
-    "key": "Accredited",
-    "color": "#7A92A3",
-    "values": [
+    "data1" : [
       {
-        "label" : "CNS" ,
-        "value" : 110
-      } ,
-      {
-        "label" : "Diabetes" ,
-        "value" : 150
-      } ,
-      {
-        "label" : "Cardivascular" ,
-        "value" : 90
-      } ,
-      {
-        "label" : "Oncology" ,
-        "value" : 70
-      } ,
-      {
-        "label" : "Autoimmune" ,
-        "value" : 100
-      }
+        "key": "Accredited",
+        "color": "#7A92A3",
+        "values": [
+          {
+            "label" : "CNS" ,
+            "value" : 110
+          } ,
+          {
+            "label" : "Diabetes" ,
+            "value" : 150
+          } ,
+          {
+            "label" : "Cardivascular" ,
+            "value" : 90
+          } ,
+          {
+            "label" : "Oncology" ,
+            "value" : 70
+          } ,
+          {
+            "label" : "Autoimmune" ,
+            "value" : 100
+          }
 
+        ]
+      },
+      {
+        "key": "Non accredited",
+        "color": "#0B62A4",
+        "values": [
+          {
+            "label" : "CNS" ,
+            "value" : 78
+          } ,
+          {
+            "label" : "Diabetes" ,
+            "value" : 100
+          } ,
+          {
+            "label" : "Cardivascular" ,
+            "value" : 50
+          } ,
+          {
+            "label" : "Oncology" ,
+            "value" : 50
+          } ,
+          {
+            "label" : "Autoimmune" ,
+            "value" : 72
+          }
+
+        ]
+      }
     ]
   },
-  {
-    "key": "Non accredited",
-    "color": "#0B62A4",
-    "values": [
-      {
-        "label" : "CNS" ,
-        "value" : 78
-      } ,
-      {
-        "label" : "Diabetes" ,
-        "value" : 100
-      } ,
-      {
-        "label" : "Cardivascular" ,
-        "value" : 50
-      } ,
-      {
-        "label" : "Oncology" ,
-        "value" : 50
-      } ,
-      {
-        "label" : "Autoimmune" ,
-        "value" : 72
-      }
 
-    ]
+  {
+   "data2" : [
+    {
+      "key": "Completed meeting",
+      "color": "#7A92A3",
+      "values": [
+        {
+          "label2" : "ON" ,
+          "value2" : 280
+        } ,
+        {
+          "label2" : "QC" ,
+          "value2" : 250
+        } ,
+        {
+          "label2" : "AB" ,
+          "value2" : 190
+        } ,
+        {
+          "label2" : "BC" ,
+          "value2" : 170
+        } ,
+        {
+          "label2" : "SASK" ,
+          "value2" : 150
+        },
+        {
+          "label2" : "MB" ,
+          "value2" : 120
+        },
+        {
+          "label2" : "NS" ,
+          "value2" : 100
+        },
+        {
+          "label2" : "NB" ,
+          "value2" : 90
+        },
+        {
+          "label2" : "NFLD" ,
+          "value2" : 70
+        },
+        {
+          "label2" : "PEI" ,
+          "value2" : 60
+        }
+
+      ]
+    },
+    {    "key": "Upcoming Meetings",
+      "color": "#0B62A4",
+      "values": [
+        {
+          "label2" : "ON" ,
+          "value2" : 260
+        } ,
+        {
+          "label2" : "QC" ,
+          "value2" : 230
+        } ,
+        {
+          "label2" : "AB" ,
+          "value2" : 170
+        } ,
+        {
+          "label2" : "BC" ,
+          "value2" : 150
+        } ,
+        {
+          "label2" : "SASK" ,
+          "value2" : 110
+        },
+        {
+          "label2" : "MB" ,
+          "value2" : 120
+        },
+        {
+          "label2" : "NS" ,
+          "value2" : 80
+        },
+        {
+          "label2" : "NB" ,
+          "value2" : 50
+        },
+        {
+          "label2" : "NFLD" ,
+          "value2" : 30
+        },
+        {
+          "label2" : "PEI" ,
+          "value2" : 20
+        }
+
+
+      ]
+    }
+  ]
   }
 ]

@@ -1,5 +1,5 @@
 <!-- START PAGE CONTAINER -->
-        <div class="page-container">
+        <div  class="page-container">
 
             <?php
 
@@ -59,6 +59,48 @@
             {
                 document.location.reload(true);
             }
+
+        // function resize() {
+        //   console.log('working');
+        // }
+
+        // d3.select(window).on('resize', resize);
+        // jQuery(window).resize( function() {
+        //     console.log('working');
+        //     //location.reload();
+        //       // var win = jQuery(this); //this = window
+        //       // if (win.height() >= 820) { /* ... */ }
+        //       // if (win.width() >= 1280) { /* ... */ }
+        //       //jQuery('#refresh').load(document.URL +  '#refresh');
+        // });
+        // window.onresize = function(event)
+        //     {
+
+        //            jQuery('.refresh').each(function(){
+        //               jQuery(this).load(this.href);
+        //            })
+
+        //         //alert('working');
+        //         //jQuery('.refresh').hide();
+        //         //document.location.reload(true);
+        //         //jQuery('#page-content').load(document.URL +  '#page-content');
+        //         // jQuery.ajaxSetup(
+        //         //     {
+        //         //         cache: false,
+        //         //         // beforeSend: function() {
+        //         //         //     jQuery('#content').hide();
+        //         //         //     jQuery('#loading').show();
+        //         //         // },
+        //         //         // complete: function() {
+        //         //         //     jQuery('#loading').hide();
+        //         //         //     jQuery('#content').show();
+        //         //         // },
+        //         //         success: function() {
+        //         //             jQuery('.refresh').hide();
+        //         //             //jQuery('.refresh').show();
+        //         //         }
+        //         //     });
+        //     }
         </script>
 
 
@@ -79,6 +121,11 @@
 
         <!-- END THIS PAGE PLUGINS-->
 
+        <!-- Start Google Chart PLUGINS-->
+         <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+         <script type="text/javascript" src="js/demo_charts_google.js"></script>
+         <!-- END Google Chart PLUGINS-->
+
         <!-- START TEMPLATE -->
         <script type="text/javascript" src="js/settings.js"></script>
         <script type="text/javascript" src="js/plugins.js"></script>
@@ -86,7 +133,7 @@
 
 
         <script type="text/javascript" src="js/demo_dashboard.js"></script>
-        <script type="text/javascript" src="js/custom-charts.js"></script>
+        <!--<script type="text/javascript" src="js/custom-charts.js"></script>-->
         <!-- END TEMPLATE -->
          <!-- START D3V3-->
         <script type="text/javascript" src="js/plugins/nvd3/lib/d3.v3.js"></script>
