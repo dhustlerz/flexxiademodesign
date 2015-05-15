@@ -7,16 +7,16 @@
              // END PAGE SIDEBAR -->
 
              // PAGE CONTENT -->
-            if ( isset($_GET['s']) && $_GET['s'] == 'acceredited') {
-                   include 'includes/diabetes/content-diabetes-accredited.inc.php';
-            }
-            elseif (isset($_GET['s']) && $_GET['s'] == 'non-acceredited') {
-                include 'includes/diabetes/content-diabetes-non-accredited.inc.php';
-            }
-            else {
-                     include 'includes/diabetes/content-diabetes.inc.php';
-                }
-
+            // if ( isset($_GET['s']) && $_GET['s'] == 'acceredited') {
+            //        include 'includes/diabetes/content-diabetes-accredited.inc.php';
+            // }
+            // elseif (isset($_GET['s']) && $_GET['s'] == 'non-acceredited') {
+            //     include 'includes/diabetes/content-diabetes-non-accredited.inc.php';
+            // }
+            // else {
+            //          include 'includes/diabetes/content-diabetes.inc.php';
+            //     }
+                include 'includes/diabetes/content-diabetes.inc.php';
              // END PAGE CONTENT -->
             ?>
 
