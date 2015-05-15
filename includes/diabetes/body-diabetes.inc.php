@@ -2,16 +2,22 @@
         <div  class="page-container">
 
             <?php
-
              // START PAGE SIDEBAR
-             include 'sidebar.inc.php' ;
+             include 'includes/diabetes/sidebar-diabetes.inc.php' ;
              // END PAGE SIDEBAR -->
 
              // PAGE CONTENT -->
-             include 'content.inc.php';
+            if ( isset($_GET['s']) && $_GET['s']=="acceredited") {
+                   include 'includes/diabetes/content-diabetes-accredited.inc.php';
+            }
+            elseif (isset($_GET['s']) && $_GET['s']=="non-acceredited") {
+                include 'includes/diabetes/content-diabetes-non-accredited.inc.php';
+            }
+            else {
+                     include 'includes/diabetes/content-diabetes.inc.php';
+                }
+
              // END PAGE CONTENT -->
-
-
             ?>
 
 

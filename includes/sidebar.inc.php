@@ -44,7 +44,7 @@ $sidebar_output.='<div class="page-sidebar bg-19283d">';
 			 */
 
 			//$sidebar_output.='<li class="xn-title">Navigation</li>';
-			$sidebar_output.='<li class="active">';
+			$sidebar_output.='<li >';
 					$sidebar_output.='<a href="dashboard.php"><span class="fa fa-desktop"></span><span class="xn-text">Dashboard</span></a>';
 			$sidebar_output.='</li>';
 			$sidebar_output.='<li class="xn-openable">';
@@ -52,7 +52,7 @@ $sidebar_output.='<div class="page-sidebar bg-19283d">';
 							$sidebar_output.='<a href="#"><span class="fa fa-user-md"></span><span class="xn-text">Medical Education</span></a>';
 							$sidebar_output.='<ul>';
 															$sidebar_output.='<li class="xn-openable">';
-																	$sidebar_output.='<a href="#">Diabetes</a>';
+																	$sidebar_output.='<a href="diabetes.php">Diabetes</a>';
 																	$sidebar_output.='<ul>';
 																			$sidebar_output.='<li><a href="#">Accredited</a></li>';
 																			$sidebar_output.='<li><a href="#">Non Accredited</a></li>';

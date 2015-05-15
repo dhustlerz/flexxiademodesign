@@ -413,6 +413,7 @@ var nvd3Charts = function() {
 			.showLabels(true).color(d3.scale.myColors().range());
 
 			d3.select("#chart-9 svg").datum(exampleDataPie()).transition().duration(350).call(chart);
+			d3.select("#chart-9-diabetes svg").datum(exampleDataPieDiabetes()).transition().duration(350).call(chart);
 
 			return chart;
 		});
@@ -434,11 +435,12 @@ var nvd3Charts = function() {
       .showLabels(true).color(d3.scale.myColors().range());
 
 			d3.select("#chart-10 svg").datum(exampleDataDonut()).transition().duration(350).call(chart);
+			d3.select("#chart-10-diabetes svg").datum(exampleDataDonutDiabetes()).transition().duration(350).call(chart);
 
 			return chart;
 		});
 
-	var startChart10 = function() {
+	var startChart11 = function() {
 		d3.json('assets/plugins/nvd3/multiBarHorizontalData.json', function(data) {
 			nv.addGraph(function() {
 				var chart = nv.models.multiBarHorizontalChart()
@@ -462,7 +464,7 @@ var nvd3Charts = function() {
 
 				chart.yAxis.tickFormat(d3.format(',f'));
 
-				d3.select('#chart-10 svg').datum(data).call(chart).data(stackedData);
+				d3.select('#chart-11 svg').datum(data).call(chart).data(stackedData);
 
 				nv.utils.windowResize(chart.update);
 
@@ -474,6 +476,22 @@ var nvd3Charts = function() {
 
 		//Pie chart example data. Note how there is only a single array of key-value pairs.
 		function exampleDataDonut() {
+			return  [
+      {
+        "label": "OLA",
+        "value" : 20
+      } ,
+
+      {
+        "label": "HCP initiated",
+        "value" : 50
+      } ,
+      {
+        "label": "Others",
+        "value" : 30
+      }];
+		}
+		function exampleDataDonutDiabetes() {
 			return  [
       {
         "label": "OLA",
@@ -493,7 +511,25 @@ var nvd3Charts = function() {
 			return  [
       {
         "label": "CEFPC",
-        "value" : 65
+        "value" : 81
+      } ,
+
+      {
+        "label": "FMOQ",
+        "value" : 12.4
+      } ,
+      {
+        "label": "Main Pro c",
+        "value" : 10
+      }];
+		}
+
+
+	function exampleDataPieDiabetes() {
+			return  [
+      {
+        "label": "CEFPC",
+        "value" : 62.5
       } ,
 
       {
@@ -502,7 +538,7 @@ var nvd3Charts = function() {
       } ,
       {
         "label": "Main Pro c",
-        "value" : 10
+        "value" : 12.5
       }];
 		}
 

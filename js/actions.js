@@ -1,5 +1,7 @@
 jQuery(document).ready(function(){
 
+
+
     /* PROGGRESS START */
     jQuery.mpb("show",{value: [0,50],speed: 5});
     /* END PROGGRESS START */
@@ -264,6 +266,17 @@ jQuery(function(){
 jQuery(window).resize(function(){
     x_navigation_onresize();
     page_content_onresize();
+});
+
+jQuery("#sidebar-ME-Diabetes-Accredited").click(function(){
+    location.reload();
+    // jQuery("#Diebetes-Acc-Nonaccre-Graphs").hide();
+    // jQuery("#Diebetes-BU-target-audience").hide();
+    // jQuery("#Diebetes-BUPSplit-Acc-Pro-Break").show();
+
+    //jQuery('#google-stacked-chart-diabetes').attr("id","google-stacked-chart-diabetes-acc");
+    //jQuery('#google-stacked-chart-diabetes-acc').load(document.URL +  ' #sidebar-ME-Diabetes-Accredited');
+
 });
 
 function onload(){
