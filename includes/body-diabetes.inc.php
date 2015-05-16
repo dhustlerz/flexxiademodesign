@@ -3,7 +3,7 @@
 
             <?php
              // START PAGE SIDEBAR
-             include 'includes/sidebar-diabetes.inc.php' ;
+             include 'includes/diabetes/sidebar-diabetes.inc.php' ;
              // END PAGE SIDEBAR -->
 
              // PAGE CONTENT -->
@@ -16,7 +16,7 @@
             // else {
             //          include 'includes/diabetes/content-diabetes.inc.php';
             //     }
-                include 'includes/content-diabetes.inc.php';
+                include 'includes/diabetes/content-diabetes.inc.php';
              // END PAGE CONTENT -->
             ?>
 

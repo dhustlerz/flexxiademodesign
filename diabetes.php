@@ -4,7 +4,7 @@
         <?php include 'includes/head.inc.php' ?>
     </head>
     <body>
-        <?php include 'includes/diabetes/body-diabetes.inc.php'; ?>
+        <?php include 'includes/body-diabetes.inc.php'; ?>
 
     </body>
 </html>
