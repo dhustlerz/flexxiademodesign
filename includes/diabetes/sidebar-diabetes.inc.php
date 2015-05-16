@@ -56,7 +56,7 @@ $sidebar_output.='<div class="page-sidebar bg-19283d">';
                               $sidebar_output.='<li class=" active xn-openable">';
                                   $sidebar_output.='<a href="diabetes.php">Diabetes</a>';
                                   $sidebar_output.='<ul>';
-                                      $sidebar_output.='<li id="sidebar-ME-Diabetes-Accredited"><a href="diabetes.php?s=acceredited">Accredited</a></li>';
+                                      $sidebar_output.='<li><a href="diabetes.php?s=acceredited">Accredited</a></li>';
                                       $sidebar_output.='<li><a href="diabetes.php?s=non-acceredited">Non Accredited</a></li>';
                                   $sidebar_output.='</ul>';
                               $sidebar_output.='</li>';
@@ -127,7 +127,7 @@ $sidebar_output.='<div class="page-sidebar bg-19283d">';
    * END X-NAVIGATION
    */
 $sidebar_output.='</div>';
-printf($sidebar_output);
+print($sidebar_output);
 
 
 ?>
