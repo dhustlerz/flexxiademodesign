@@ -1,7 +1,5 @@
 jQuery(document).ready(function(){
 
-
-
     /* PROGGRESS START */
     jQuery.mpb("show",{value: [0,50],speed: 5});
     /* END PROGGRESS START */
@@ -267,8 +265,6 @@ jQuery(window).resize(function(){
     x_navigation_onresize();
     page_content_onresize();
 });
-
-
 
 function onload(){
     x_navigation_onresize();
