@@ -94,7 +94,7 @@ $output.='<div class="page-content-wrap ">';
                     $output.='<div class="col-md-6">';
                     /*--------------------------------------------------------------------------------------*/
                       $output.='<div class="dashpage-square-number-top padding-top-10 padding-bottom-10">';
-                        $output.='<div class="animate-number h3 line-height-1-5">64</div>';
+                        $output.='<div class="animate-number h3 line-height-1-5">40</div>';
                         $output.='<div class="h6 padding-top-6">Total Meetings</div>';
                       $output.='</div>';
                     /*--------------------------------------------------------------------------------------*/
@@ -105,7 +105,7 @@ $output.='<div class="page-content-wrap ">';
                  $output.='<div class="row  bg-2DAAE1 margin-top-12">';
                 $output.='<div class=" col-md-12 padding-top-12">';
                 /*--------------------------------------------------------------------------------------*/
-                  $output.='<div class="col-md-1 col-xs-1 "><span class="font-size-18 color-fff col-centered">3.80</span></div>';
+                  $output.='<div class="col-md-1 col-xs-1 "><span class="font-size-18 color-fff col-centered">4.75</span></div>';
 
                   $output.='<div class=" col-md-11 col-xs-11">';
                   /*--------------------------------------------------------------------------------------*/
@@ -150,7 +150,7 @@ $output.='<div class="page-content-wrap ">';
                   $output.='<div class="col-md-6">';
                   /*--------------------------------------------------------------------------------------*/
                     $output.='<div class="dashpage-square-number-top padding-top-10 padding-bottom-10">';
-                      $output.='<div class="animate-number-1 h3 line-height-1-5">371</div>';
+                      $output.='<div class="animate-number-1 h3 line-height-1-5">270</div>';
                       $output.='<div class="h6 padding-top-6">Total Evaluations</div>';
                     $output.='</div>';
                   /*--------------------------------------------------------------------------------------*/
@@ -161,7 +161,7 @@ $output.='<div class="page-content-wrap ">';
               $output.='<div class="row  bg-3C5B9B margin-top-12">';
                 $output.='<div class=" col-md-12 padding-top-12">';
                 /*--------------------------------------------------------------------------------------*/
-                  $output.='<div class="col-md-1 col-xs-1 "><span class="font-size-18 color-fff col-centered">4.15</span></div>';
+                  $output.='<div class="col-md-1 col-xs-1 "><span class="font-size-18 color-fff col-centered">4.58</span></div>';
 
                   $output.='<div class=" col-md-11 col-xs-11">';
                   /*--------------------------------------------------------------------------------------*/
@@ -203,7 +203,7 @@ $output.='<div class="page-content-wrap ">';
                     $output.='<div class="col-md-6">';
                     /*--------------------------------------------------------------------------------------*/
                       $output.='<div class="dashpage-square-number-top padding-top-10 padding-bottom-10">';
-                        $output.='<div class="animate-number-2 h3 line-height-1-5">530</div>';
+                        $output.='<div class="animate-number-2 h3 line-height-1-5">5320</div>';
                         $output.='<div class="h6 padding-top-6">Total Attendees</div>';
                       $output.='</div>';
                     /*--------------------------------------------------------------------------------------*/
@@ -214,7 +214,7 @@ $output.='<div class="page-content-wrap ">';
                 $output.='<div class="row  bg-0173B2 margin-top-12">';
                   $output.='<div class=" col-md-12 padding-top-12">';
                   /*--------------------------------------------------------------------------------------*/
-                    $output.='<div class="col-md-1 col-xs-1 "><span class="font-size-18 color-fff col-centered">84.9%</span></div>';
+                    $output.='<div class="col-md-1 col-xs-1 "><span class="font-size-18 color-fff col-centered">90.9%</span></div>';
 
                     $output.='<div class=" col-md-11 col-xs-11">';
                     /*--------------------------------------------------------------------------------------*/
@@ -268,7 +268,49 @@ $output.='<div class="page-content-wrap ">';
     /**
      * END WIDGETS
      */
-    /*----------------------------------------------------------------------    // $output.='<div  id="Diebetes-BUPSplit-Acc-Pro-Break" class="row margin-top-24" >';
+    /*----------------------------------------------------------------------------------------------------------------------------*/
+    $output.='<div  id="Diebetes-BUPSplit-Acc-Pro-Break" class="row margin-top-24" >';
+
+        $output.='<div id="refresh" class=" col-md-6 " style="">';
+          /**
+           * START Horizontal bar CHART
+           */
+          $output.='<div class="panel ">';
+          $output.='<div class=" panel-header">BU Program Split</div>';
+              $output.='<div class="panel-body bg-ffffff" style="height: 330px;">';
+                  $output.='<div class="" id="google-stacked-chart-diabetes-acc" ><svg></svg></div>';
+              $output.='</div>';
+          $output.='</div>';
+          /**
+           * END REGULAR PIE CHART
+           */
+        $output.='</div>';
+
+        $output.='<div class="col-md-6 " style="">';
+            /**
+             * START REGULAR PIE CHART
+             */
+            $output.='<div class="panel ">';
+            $output.='<div class=" panel-header">Target Audience Participation </div>';
+            $output.='<div class="panel-body bg-ffffff padding-0">';
+                $output.='<div class="text-center padding-top-80  font-size-14"  style="height: 330px;">';
+                    $output.='<input class="knob" data-width="200" data-thickness=".3" data-angleOffset="270" data-angleArc="180" data-fgColor="#0173B2" value="95"/>';
+                     $output.='</div>';
+                $output.='</div>';
+                // $output.='<div class="panel-body bg-ffffff padding-0">';
+                //     $output.='<div class="" id="chart-9-diabetes" style="height: 300px;"><svg></svg></div>';
+                // $output.='</div>';
+            $output.='</div>';
+            /**
+             * END REGULAR PIE CHART
+             */
+        $output.='</div>';
+
+
+    $output.='</div>';
+    /*----------------------------------------------------------------------------------------------------------------------------*/
+    /*----------------------------------------------------------------------------------------------------------------------------*/
+    // $output.='<div  id="Diebetes-BU-target-audience"  class="row margin-top-24" >';
 
     //     $output.='<div id="refresh" class=" col-md-6 " style="">';
     //       /**
@@ -277,7 +319,7 @@ $output.='<div class="page-content-wrap ">';
     //       $output.='<div class="panel ">';
     //       $output.='<div class=" panel-header">BU Program Split</div>';
     //           $output.='<div class="panel-body bg-ffffff" style="height: 330px;">';
-    //               $output.='<div class="" id="google-stacked-chart-diabetes-acc" ><svg></svg></div>';
+    //               $output.='<div class="" id="google-stacked-chart-diabetes" ><svg></svg></div>';
     //           $output.='</div>';
     //       $output.='</div>';
     //       /**
@@ -306,49 +348,7 @@ $output.='<div class="page-content-wrap ">';
     //     $output.='</div>';
 
 
-    // $output.='</div>';------------------------------------------------------*/
-
-    /*----------------------------------------------------------------------------------------------------------------------------*/
-    /*----------------------------------------------------------------------------------------------------------------------------*/
-    $output.='<div  id="Diebetes-BU-target-audience"  class="row margin-top-24" >';
-
-        $output.='<div id="refresh" class=" col-md-6 " style="">';
-          /**
-           * START Horizontal bar CHART
-           */
-          $output.='<div class="panel ">';
-          $output.='<div class=" panel-header">BU Program Split</div>';
-              $output.='<div class="panel-body bg-ffffff" style="height: 330px;">';
-                  $output.='<div class="" id="google-stacked-chart-diabetes" ><svg></svg></div>';
-              $output.='</div>';
-          $output.='</div>';
-          /**
-           * END REGULAR PIE CHART
-           */
-        $output.='</div>';
-
-        $output.='<div class="col-md-6 " style="">';
-            /**
-             * START REGULAR PIE CHART
-             */
-            $output.='<div class="panel ">';
-            $output.='<div class=" panel-header">Target Audience Participation </div>';
-            $output.='<div class="panel-body bg-ffffff padding-0">';
-                $output.='<div class="text-center padding-top-80  font-size-14"  style="height: 330px;">';
-                    $output.='<input class="knob" data-width="200" data-thickness=".3" data-angleOffset="270" data-angleArc="180" data-fgColor="#0173B2" value="90"/>';
-                     $output.='</div>';
-                $output.='</div>';
-                // $output.='<div class="panel-body bg-ffffff padding-0">';
-                //     $output.='<div class="" id="chart-9-diabetes" style="height: 300px;"><svg></svg></div>';
-                // $output.='</div>';
-            $output.='</div>';
-            /**
-             * END REGULAR PIE CHART
-             */
-        $output.='</div>';
-
-
-    $output.='</div>';
+    // $output.='</div>';
     /*------------------------------------------------------------------------------------------------------*/
 
     // $output.='<div class="row margin-top-24">';
@@ -400,40 +400,40 @@ $output.='<div class="page-content-wrap ">';
     //     $output.='</div>';
     // $output.='</div>';
     // /*-------------------------------------------------------------------------------------------------------------*/
-    $output.='<div id="Diebetes-Acc-Nonaccre-Graphs" class="row margin-top-24" >';
+    // $output.='<div id="Diebetes-Acc-Nonaccre-Graphs" class="row margin-top-24" >';
 
-        $output.='<div class="col-md-6 " style="">';
-          /**
-           * START REGULAR PIE CHART
-           */
-          $output.='<div class="panel ">';
-          $output.='<div class=" panel-header">Accredited Program Breakdown </div>';
-            $output.='<div class="panel-body bg-ffffff" style="height: 300px;">';
-                $output.='<div class="" id="chart-9-diabetes" style="height: 300px;"><svg></svg></div>';
-            $output.='</div>';
-          $output.='</div>';
-          /**
-           * END REGULAR PIE CHART
-           */
-        $output.='</div>';
+    //     $output.='<div class="col-md-6 " style="">';
+    //       /**
+    //        * START REGULAR PIE CHART
+    //        */
+    //       $output.='<div class="panel ">';
+    //       $output.='<div class=" panel-header">Accredited Program Breakdown </div>';
+    //         $output.='<div class="panel-body bg-ffffff" style="height: 300px;">';
+    //             $output.='<div class="" id="chart-9-diabetes" style="height: 300px;"><svg></svg></div>';
+    //         $output.='</div>';
+    //       $output.='</div>';
+    //       /**
+    //        * END REGULAR PIE CHART
+    //        */
+    //     $output.='</div>';
 
-        $output.='<div class="col-md-6 " style="">';
-            /**
-             * START REGULAR Donut CHART
-             */
-            $output.='<div class="panel ">';
-            $output.='<div class=" panel-header">Non-Accredited Program Breakdown</div>';
-                $output.='<div class="panel-body bg-ffffff padding-0">';
-                    $output.='<div id="chart-10-diabetes" style=" height: 300px;"><svg></svg></div>';
-                $output.='</div>';
-            $output.='</div>';
-            /**
-             * END REGULAR Donut CHART
-             */
-        $output.='</div>';
+    //     $output.='<div class="col-md-6 " style="">';
+    //         /**
+    //          * START REGULAR Donut CHART
+    //          */
+    //         $output.='<div class="panel ">';
+    //         $output.='<div class=" panel-header">Non-Accredited Program Breakdown</div>';
+    //             $output.='<div class="panel-body bg-ffffff padding-0">';
+    //                 $output.='<div id="chart-10-diabetes" style=" height: 300px;"><svg></svg></div>';
+    //             $output.='</div>';
+    //         $output.='</div>';
+    //         /**
+    //          * END REGULAR Donut CHART
+    //          */
+    //     $output.='</div>';
 
 
-    $output.='</div>';
+    // $output.='</div>';
     /*---------------------------------------------------------------------------------------------------------------*/
     // $output.='<div class="row">';
     //      /**
