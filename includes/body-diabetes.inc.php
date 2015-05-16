@@ -2,6 +2,7 @@
         <div  class="page-container">
 
             <?php
+
              // START PAGE SIDEBAR
              include 'includes/sidebar-diabetes.inc.php' ;
              // END PAGE SIDEBAR -->
