@@ -4,18 +4,18 @@
             <?php
 
              // START PAGE SIDEBAR
-             include 'includes/sidebar-diabetes.inc.php' ;
+             include 'sidebar-diabetes.inc.php' ;
              // END PAGE SIDEBAR -->
 
              //PAGE CONTENT -->
             if ( isset($_GET['s']) && $_GET['s'] == 'acceredited') {
-                   include 'includes/content-diabetes-accredited.inc.php';
+                   include 'content-diabetes-accredited.inc.php';
             }
             elseif (isset($_GET['s']) && $_GET['s'] == 'non-acceredited') {
-                include 'includes/content-diabetes-non-accredited.inc.php';
+                include 'content-diabetes-non-accredited.inc.php';
             }
             else {
-                     include 'includes/content-diabetes.inc.php';
+                     include 'content-diabetes.inc.php';
                 }
                // include 'includes/content-diabetes.inc.php';
              // END PAGE CONTENT -->
