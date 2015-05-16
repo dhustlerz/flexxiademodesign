@@ -268,16 +268,7 @@ jQuery(window).resize(function(){
     page_content_onresize();
 });
 
-jQuery("#sidebar-ME-Diabetes-Accredited").click(function(){
-    location.reload();
-    // jQuery("#Diebetes-Acc-Nonaccre-Graphs").hide();
-    // jQuery("#Diebetes-BU-target-audience").hide();
-    // jQuery("#Diebetes-BUPSplit-Acc-Pro-Break").show();
 
-    //jQuery('#google-stacked-chart-diabetes').attr("id","google-stacked-chart-diabetes-acc");
-    //jQuery('#google-stacked-chart-diabetes-acc').load(document.URL +  ' #sidebar-ME-Diabetes-Accredited');
-
-});
 
 function onload(){
     x_navigation_onresize();
