@@ -458,7 +458,7 @@ $output.='<div class="page-content-wrap ">';
               /**
                * START DEFAULT DATATABLE
                */
-              require 'includes\simple-speaker-table.inc.php' ;
+              require 'simple-speaker-table.inc.php' ;
               /**
                * END DEFAULT DATATABLE
                */
@@ -472,7 +472,7 @@ $output.='<div class="page-content-wrap ">';
               /**
                * START DEFAULT DATATABLE
                */
-               require 'includes\simple-program-table.inc.php' ;
+               require 'simple-program-table.inc.php' ;
               /**
                * END DEFAULT DATATABLE
                */
