@@ -1,4 +1,4 @@
- <?php
+<?php
 $sidebar_output = '';
 $sidebar_output.='<div class="page-sidebar bg-19283d">';
 
@@ -13,10 +13,8 @@ $sidebar_output.='<div class="page-sidebar bg-19283d">';
       /**
        * MESSAGE BOX
        */
-
-       include 'includes/message-box.inc.php';
-
-      /**me
+      include 'message-box.inc.php';
+      /**
        * END MESSAGE BOX
        */
 
@@ -46,7 +44,7 @@ $sidebar_output.='<div class="page-sidebar bg-19283d">';
        */
 
       //$sidebar_output.='<li class="xn-title">Navigation</li>';
-      $sidebar_output.='<li>';
+      $sidebar_output.='<li >';
           $sidebar_output.='<a href="dashboard.php"><span class="fa fa-desktop"></span><span class="xn-text">Dashboard</span></a>';
       $sidebar_output.='</li>';
       $sidebar_output.='<li class="xn-openable">';
@@ -54,15 +52,17 @@ $sidebar_output.='<div class="page-sidebar bg-19283d">';
               $sidebar_output.='<a href="#"><span class="fa fa-user-md"></span><span class="xn-text">Medical Education</span></a>';
               $sidebar_output.='<ul>';
                               $sidebar_output.='<li class=" active xn-openable">';
-                                  $sidebar_output.='<a href="diabetes.php">Diabetes</a>';
+                                  $sidebar_output.='<a href="#">Diabetes</a>';
                                   $sidebar_output.='<ul>';
-                                      $sidebar_output.='<li id="sidebar-ME-Diabetes-Accredited"><a href="diabetes.php?s=acceredited">Accredited</a></li>';
+                                      $sidebar_output.='<li><a href="diabetes.php">All Programs</a></li>';
+                                      $sidebar_output.='<li><a href="diabetes.php?s=acceredited">Accredited</a></li>';
                                       $sidebar_output.='<li><a href="diabetes.php?s=non-acceredited">Non Accredited</a></li>';
                                   $sidebar_output.='</ul>';
                               $sidebar_output.='</li>';
                               $sidebar_output.='<li class="xn-openable">';
                                   $sidebar_output.='<a href="#">Asthma</a>';
                                   $sidebar_output.='<ul>';
+                                      $sidebar_output.='<li><a href="#">All Programs</a></li>';
                                       $sidebar_output.='<li><a href="#">Accredited</a></li>';
                                       $sidebar_output.='<li><a href="#">Non Accredited</a></li>';
                                   $sidebar_output.='</ul>';
@@ -70,6 +70,7 @@ $sidebar_output.='<div class="page-sidebar bg-19283d">';
                               $sidebar_output.='<li class="xn-openable">';
                                   $sidebar_output.='<a href="#">Osteoarthrits</a>';
                                   $sidebar_output.='<ul>';
+                                      $sidebar_output.='<li><a href="#">All Programs</a></li>';
                                       $sidebar_output.='<li><a href="#">Accredited</a></li>';
                                       $sidebar_output.='<li><a href="#">Non Accredited</a></li>';
                                   $sidebar_output.='</ul>';
@@ -103,7 +104,7 @@ $sidebar_output.='<div class="page-sidebar bg-19283d">';
       $sidebar_output.='<li class="xn-openable">';
       //  $sidebar_output.='<a href="#"><span class="fa fa-sitemap"></span><span class="xn-text">Navigation Levels</span></a>';
       //    $sidebar_output.='<ul>';
-      //        $sidebar_output.='<li clasmes="xn-openable">';
+      //        $sidebar_output.='<li class="xn-openable">';
       //            $sidebar_output.='<a href="#">Second Level</a>';
       //            $sidebar_output.='<ul>';
       //                $sidebar_output.='<li class="xn-openable">';
@@ -130,4 +131,4 @@ $sidebar_output.='</div>';
 printf($sidebar_output);
 
 
- ?>
+?>
