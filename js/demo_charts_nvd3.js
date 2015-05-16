@@ -283,8 +283,6 @@ var nvd3Charts = function() {
 				/*
 			   * Chart two ends
 				 */
-				 console.log(data[0].data1);
-				 console.log(data[1].data2);
 				d3.select('#chart-5 svg').datum(data[0].data1).call(chart1);
 
 				d3.select('#chart-5pt2 svg').datum(data[1].data2).call(chart2);
