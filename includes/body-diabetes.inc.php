@@ -14,7 +14,7 @@
                 include 'includes/content-diabetes-non-accredited.inc.php';
             }
             else {
-                     include 'includes/diabetes/content-diabetes.inc.php';
+                     include 'includes/content-diabetes.inc.php';
                 }
                // include 'includes/content-diabetes.inc.php';
              // END PAGE CONTENT -->
