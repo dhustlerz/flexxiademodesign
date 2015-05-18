@@ -22,7 +22,7 @@
               generateGradient: true
             };
             console.log(window.location.pathname+window.location.search);
-             if (window.location.pathname+window.location.search == "/flexxiademodesign/diabetes.php") {
+             if (window.location.pathname+window.location.search == '/flexxiademodesign/diabetes.php') {
               alert('working');
             var targetDiabetes = document.getElementById("diabetes-gauge"); // your canvas element
             var gaugeDiabetes = new Gauge(targetDiabetes).setOptions(opts); // create sexy gauge!
@@ -38,7 +38,7 @@
             gaugeDiabetes.animationSpeed = 6; // set animation speed (32 is default value)
             gaugeDiabetes.set(90); // set actual value
           }
-          else if (window.location.pathname+window.location.search == "/flexxiademodesign/diabetes.php?s=acceredited") {
+          else if (window.location.pathname+window.location.search == '/flexxiademodesign/diabetes.php?s=acceredited') {
             /*Gauge for diabetes accreted program*/
              var targetDiabetesAccr = document.getElementById("diabetes-gauge-accr"); // your canvas element
             var gaugeDiabetesAccr = new Gauge(targetDiabetesAccr).setOptions(opts); // create sexy gauge!
@@ -55,7 +55,7 @@
             gaugeDiabetesAccr.set(95); // set actual value
 
           }
-           else if (window.location.pathname+window.location.search == "/flexxiademodesign/diabetes.php?s=non-acceredited") {
+           else if (window.location.pathname+window.location.search == '/flexxiademodesign/diabetes.php?s=non-acceredited') {
             /*Gauge for diabetes accreted program*/
              var targetDiabetesAccr = document.getElementById("diabetes-gauge-non-accr"); // your canvas element
             var gaugeDiabetesAccr = new Gauge(targetDiabetesAccr).setOptions(opts); // create sexy gauge!
