@@ -36,7 +36,7 @@
             gaugeDiabetes.animationSpeed = 6; // set animation speed (32 is default value)
             gaugeDiabetes.set(90); // set actual value
           }
-          else if (window.location.pathname+window.location.search == '/fflexxia-demo/diabetes.php?s=acceredited') {
+          else if (window.location.pathname+window.location.search == '/flexxia-demo/diabetes.php?s=acceredited') {
             /*Gauge for diabetes accreted program*/
              var targetDiabetesAccr = document.getElementById("diabetes-gauge-accr"); // your canvas element
             var gaugeDiabetesAccr = new Gauge(targetDiabetesAccr).setOptions(opts); // create sexy gauge!
