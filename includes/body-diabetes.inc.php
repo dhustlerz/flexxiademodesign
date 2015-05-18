@@ -125,6 +125,9 @@
         <script type="text/javascript" src="js/plugins/daterangepicker/daterangepicker.js"></script>
           <script type="text/javascript" src="js/plugins/markerclustererplus.js"></script>
           <script type="text/javascript" src="js/plugins/jquery-animateNumber.js"></script>
+          <script type="text/javascript" src="js/plugins/gauge.js"></script>
+          <script type="text/javascript" src="js/demo_gauge.js"></script>
+
 
         <!-- END THIS PAGE PLUGINS-->
 
