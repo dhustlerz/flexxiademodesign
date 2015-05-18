@@ -583,8 +583,6 @@ var morrisCharts = function() {
     });
 }();
 
-
-
 /* EOF NEW OBJECT(GET SIZE OF ARRAY) */
 
 
