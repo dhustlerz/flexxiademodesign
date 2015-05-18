@@ -1,4 +1,5 @@
 <?php
+
 $output = '';
 $output.='<div class="page-content">';
       /**
@@ -203,7 +204,7 @@ $output.='<div class="page-content-wrap ">';
                     $output.='<div class="col-md-6">';
                     /*--------------------------------------------------------------------------------------*/
                       $output.='<div class="dashpage-square-number-top padding-top-10 padding-bottom-10">';
-                        $output.='<div class="animate-number-2 h3 line-height-1-5">5320</div>';
+                        $output.='<div class="animate-number-2 h3 line-height-1-5">320</div>';
                         $output.='<div class="h6 padding-top-6">Total Attendees</div>';
                       $output.='</div>';
                     /*--------------------------------------------------------------------------------------*/
@@ -294,8 +295,9 @@ $output.='<div class="page-content-wrap ">';
             $output.='<div class=" panel-header">Target Audience Participation </div>';
             $output.='<div class="panel-body bg-ffffff padding-0">';
                 $output.='<div class="text-center padding-top-80  font-size-14"  style="height: 330px;">';
-                    $output.='<input class="knob" data-width="200" data-thickness=".3" data-angleOffset="270" data-angleArc="180" data-fgColor="#0173B2" value="95"/>';
-                     $output.='</div>';
+                    $output.='<div><canvas id="diabetes-gauge-accr"></canvas></div>';
+                    $output.='<div class="color-2DAAE1 font-size-18 font-bold"><span id="diabetes-gauge-accr-value"></span></div>';
+                    //$output.='<input class="knob" data-width="200" data-thickness=".3" data-angleOffset="270" data-angleArc="180" data-fgColor="#0173B2" value="90"/>';
                 $output.='</div>';
                 // $output.='<div class="panel-body bg-ffffff padding-0">';
                 //     $output.='<div class="" id="chart-9-diabetes" style="height: 300px;"><svg></svg></div>';
@@ -486,7 +488,11 @@ $output.='</div>';
 /**
  * END PAGE CONTENT WRAPPER
  */
+/*$output.='<script type="text/javascript" src="js/plugins/gauge.js"></script>';
+$output.='<script src="js/demo_gauge.js" />';*/
+
 $output.='</div>';
+
 print($output);
 
 ?>
