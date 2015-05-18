@@ -21,7 +21,9 @@
               strokeColor: '#E0E0E0',   // to see which ones work best for you
               generateGradient: true
             };
+            console.log(window.location.pathname+window.location.search);
              if (window.location.pathname+window.location.search == '/flexxia-demo/diabetes.php') {
+              alert('working');
             var targetDiabetes = document.getElementById("diabetes-gauge"); // your canvas element
             var gaugeDiabetes = new Gauge(targetDiabetes).setOptions(opts); // create sexy gauge!
             gaugeDiabetes.setTextField(document.getElementById("diabetes-gauge-font"));
