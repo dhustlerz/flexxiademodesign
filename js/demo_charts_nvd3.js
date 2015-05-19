@@ -508,7 +508,7 @@ var nvd3Charts = function() {
 		function exampleDataPie() {
 			return  [
       {
-        "label": "CFPC",
+        "label": "CEFPC",
         "value" : 81
       } ,
 
@@ -526,7 +526,7 @@ var nvd3Charts = function() {
 	function exampleDataPieDiabetes() {
 			return  [
       {
-        "label": "CFPC",
+        "label": "CEFPC",
         "value" : 62.5
       } ,
 
