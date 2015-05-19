@@ -309,6 +309,7 @@ $output.='<div class="page-content-wrap ">';
     // $output.='</div>';------------------------------------------------------*/
 
     /*----------------------------------------------------------------------------------------------------------------------------*/
+
     /*----------------------------------------------------------------------------------------------------------------------------*/
     $output.='<div  id="Diebetes-BU-target-audience"  class="row margin-top-24" >';
 
@@ -350,6 +351,23 @@ $output.='<div class="page-content-wrap ">';
 
 
     $output.='</div>';
+    /*---------------------------------------------------------------------------------------------------------------*/
+    $output.='<div class="row">';
+         /**
+          * START GOOGLE WORLD MAP
+          */
+        $output.='<div class="col-md-12">';
+            $output.='<div class="panel panel-default">';
+            $output.='<div class=" panel-header">Regional Meeting Detail</div>';
+                $output.='<div class="panel-body panel-body-map">';
+                    $output.='<div id="google_world_map_canada" style="height: 300px;"></div>';
+                $output.='</div>';
+            $output.='</div>';
+        $output.='</div>';
+    $output.='</div>';
+    /**
+     * END GOOGLE WORLD MAP
+     */
     /*------------------------------------------------------------------------------------------------------*/
 
     // $output.='<div class="row margin-top-24">';
@@ -435,23 +453,7 @@ $output.='<div class="page-content-wrap ">';
 
 
     $output.='</div>';
-    /*---------------------------------------------------------------------------------------------------------------*/
-    // $output.='<div class="row">';
-    //      /**
-    //       * START GOOGLE WORLD MAP
-    //       */
-    //     $output.='<div class="col-md-12">';
-    //         $output.='<div class="panel panel-default">';
-    //         $output.='<div class=" panel-header">Regional Meeting Detail</div>';
-    //             $output.='<div class="panel-body panel-body-map">';
-    //                 $output.='<div id="google_world_map_canada" style="height: 300px;"></div>';
-    //             $output.='</div>';
-    //         $output.='</div>';
-    //     $output.='</div>';
-    // $output.='</div>';
-    /**
-     * END GOOGLE WORLD MAP
-     */
+
 
       $output.='<div class="row">';
           $output.='<div class="col-md-6">';
