@@ -646,6 +646,7 @@ body.page-container-boxed .page-container {
   text-align: center;
   width: 50px;
 }
+
 .x-navigation.x-navigation-horizontal .xn-icon-button > a .fa,
 .x-navigation.x-navigation-horizontal .xn-icon-button > a .glyphicon {
   margin: 0px;
@@ -781,13 +782,19 @@ body.page-container-boxed .page-container {
   width: 50px;
   background-image: url("../img/logo-small.png");
 }
+.x-navigation.x-navigation-horizontal .xn-search input {
+  width: 10px;
+
+}
 .x-navigation.x-navigation-minimized .xn-search input {
   width: 30px;
-  padding: 0px 2px 0px 28px;
+  padding: 0px 1px 0px 28px;
 }
 .x-navigation.x-navigation-minimized .xn-search input:focus {
   width: 200px;
   padding: 0px 8px 0px 28px;
+   border: 1px solid #29343f;
+  background: #2d3945;
 }
 .x-navigation.x-navigation-custom li ul {
   background: #2d3945;
@@ -856,10 +863,10 @@ body.page-container-boxed .page-container {
 .x-navigation .xn-search input {
   width: 200px;
   height: 30px;
-  padding: 0px 8px 0px 28px;
+  padding: 0px 1px 0px 28px;
   line-height: 25px;
   border: 1px solid #29343f;
-  background: #2d3945;
+  background: #002840;
   color: #AAA;
   -webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease;
@@ -872,6 +879,8 @@ body.page-container-boxed .page-container {
 }
 .x-navigation .xn-search:before {
   content: "\f002";
+  /*border: 1px solid #002840;
+  background: #002840;*/
   font-family: FontAwesome;
   position: absolute;
   width: 30px;
@@ -890,14 +899,15 @@ body.page-container-boxed .page-container {
 }
 .x-navigation .x-navigation-control {
   position: absolute;
-  right: 0px;
+  float: left;
+  left: 0px;
   width: 50px;
   height: 50px;
   cursor: pointer;
   display: none;
 }
 .x-navigation .x-navigation-control:hover {
-  background: #e0401d;
+  background: #428bca;
   border-bottom: 0px;
 }
 .x-navigation .x-navigation-control:before {
@@ -905,8 +915,31 @@ body.page-container-boxed .page-container {
   font-family: "FontAwesome";
   content: "\f0c9";
   font-size: 14px;
-  top: 14px;
+  top: 17px;
   left: 20px;
+  color: #FFF;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.x-navigation .x-navigation-datepicker {
+  position: absolute;
+  //float: left;
+  right: 0px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  display: none;
+}
+.x-navigation .x-navigation-datepicker:hover {
+  background: #428bca;
+  border-bottom: 0px;
+}
+.x-navigation .x-navigation-datepicker:before {
+  position: absolute;
+  font-family: "FontAwesome";
+  content: "\f073";
+  font-size: 14px;
+  top: 17px;
+  right: 20px;
   color: #FFF;
   text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.3);
 }
@@ -7325,6 +7358,10 @@ li.ext_zip {
   [class^='col-lg-'] {
     margin-bottom: 10px;
   }
+  /* display none date picker*/
+  #reportrange {
+    display: none;
+  }
   /* LOGIN */
   .login-container {
     padding: 0px 10px;
@@ -7430,6 +7467,9 @@ li.ext_zip {
     overflow: visible;
   }
   .x-navigation .x-navigation-control {
+    display: block;
+  }
+  .x-navigation .x-navigation-datepicker {
     display: block;
   }
   .x-navigation-minimize {
