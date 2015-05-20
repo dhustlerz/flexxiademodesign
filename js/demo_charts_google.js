@@ -1,9 +1,12 @@
 
+
 //var googleStackedChart = function() {
   google.load("visualization", "1", {packages:["corechart"]});
   google.setOnLoadCallback(drawGoogleStackedChart);
   function drawGoogleStackedChart() {
-
+    jQuery(window).resize(function(){
+      drawGoogleStackedChart();
+    });
   var data = google.visualization.arrayToDataTable([
    ['B_UNIT', 'Cardiovascular', 'Asthama', 'CNS', 'Oncology',
        'Diabetes',  { role: 'annotation' } ],
@@ -38,6 +41,7 @@
   google.load("visualization", "1", {packages:["corechart"]});
   google.setOnLoadCallback(drawGoogleHorizontalStackedChart);
   function drawGoogleHorizontalStackedChart() {
+
     var data = google.visualization.arrayToDataTable([
             ['Meetings', 'Total Programs', 'Evaluation', { role: 'annotation' } ],
             ['Adding Meal-Time Insulin to Basal Insulin', 7, 10, ''],
@@ -70,9 +74,11 @@
         var chart = new google.visualization.BarChart(document.getElementById("google-stacked-chart-diabetes"));
         chart.draw(view, options);
     }
+
     google.load("visualization", "1", {packages:["corechart"]});
     google.setOnLoadCallback(drawGoogleHorizontalStackedChartDiabetesAccr);
     function drawGoogleHorizontalStackedChartDiabetesAccr() {
+
     var data = google.visualization.arrayToDataTable([
             ['Meetings', 'Total Programs', 'Evaluation', { role: 'annotation' } ],
             ['Adding Meal-Time Insulin to Basal Insulin', 7, 10, ''],
@@ -83,9 +89,7 @@
             ['Insulinothérapie: Mise à jour pour les infirmières en milieu ', 2, 30,  ''],
             ['Lapproche motivationelle chez le patient diabetique', 2, 70,  ''],
             ['La transition des patients DT1 en milieu adulte: Un cheminement', 1, 50,  ''],
-            ['le traitement du diabète chez la personne âgée', 1, 12,  ''],
-
-
+            ['le traitement du diabète chez la personne âgée', 1, 12,  '']
 
     ]);
 
@@ -103,6 +107,7 @@
         var chart = new google.visualization.BarChart(document.getElementById("google-stacked-chart-diabetes-acc"));
         chart.draw(view, options);
     }
+
     google.load("visualization", "1", {packages:["corechart"]});
     google.setOnLoadCallback(drawGoogleHorizontalStackedChartDiabetesNonAccr);
     function drawGoogleHorizontalStackedChartDiabetesNonAccr() {
@@ -116,12 +121,7 @@
 
 
     ]);
-      jQuery(window).resize(function(){
-          drawGoogleStackedChart();
-          drawGoogleHorizontalStackedChart();
-          drawGoogleHorizontalStackedChartDiabetesAccr();
-          drawGoogleHorizontalStackedChartDiabetesNonAccr();
-        });
+
 
         var view = new google.visualization.DataView(data);
 
@@ -136,7 +136,6 @@
         };
         var chart = new google.visualization.BarChart(document.getElementById("google-stacked-chart-diabetes-non-accr"));
         chart.draw(view, options);
-
 //}
     }
 
