@@ -116,6 +116,12 @@
 
 
     ]);
+      jQuery(window).resize(function(){
+          drawGoogleStackedChart();
+          drawGoogleHorizontalStackedChart();
+          drawGoogleHorizontalStackedChartDiabetesAccr();
+          drawGoogleHorizontalStackedChartDiabetesNonAccr();
+        });
 
         var view = new google.visualization.DataView(data);
 
@@ -130,5 +136,9 @@
         };
         var chart = new google.visualization.BarChart(document.getElementById("google-stacked-chart-diabetes-non-accr"));
         chart.draw(view, options);
-    }
+
 //}
+    }
+
+
+
