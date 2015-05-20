@@ -6,9 +6,12 @@ $sidebar_output.='<div class="page-sidebar bg-19283d">';
    * START X-NAVIGATION
    */
   $sidebar_output.='<ul class="x-navigation page-navigation-top-fixed">';
+
    $sidebar_output.='<li class="xn-logo">';
+
           $sidebar_output.='<a href="dashboard.php">Flexxia</a>';
           $sidebar_output.='<a href="#" class="x-navigation-control"></a>';
+          $sidebar_output.='<a href="#" class="reportrange x-navigation-datepicker"></a>';
       $sidebar_output.='</li>';
       /**
        * MESSAGE BOX
@@ -27,7 +30,7 @@ $sidebar_output.='<div class="page-sidebar bg-19283d">';
           $sidebar_output.='</a>';
           $sidebar_output.='<div class= "profile">';
               $sidebar_output.='<div class="profile-image">';
-                  $sidebar_output.='<img style="width: 60px;" src="assets/images/users/user0.png" alt="John Doe"/>';
+                  $sidebar_output.='<img style="width: 60px;" src="assets/images/users/user0.png" alt="Chris Dodd"/>';
               $sidebar_output.='</div>';
               $sidebar_output.='<div class="profile-data">';
                   $sidebar_output.='<div class="profile-data-name"><span>Chris Dodd</span><a href="#" class="mb-control padding-left-12 color-fff" data-box="#mb-signout"><span class="fa fa-gear"></span></a></div>';
@@ -48,10 +51,10 @@ $sidebar_output.='<div class="page-sidebar bg-19283d">';
           $sidebar_output.='<a href="dashboard.php"><span class="fa fa-desktop"></span><span class="xn-text">Dashboard</span></a>';
       $sidebar_output.='</li>';
       $sidebar_output.='<li class="xn-openable">';
-          $sidebar_output.='<li >';
+          $sidebar_output.='<li class="">';
               $sidebar_output.='<a href="#"><span class="fa fa-user-md"></span><span class="xn-text">Medical Education</span></a>';
               $sidebar_output.='<ul>';
-                              $sidebar_output.='<li class=" xn-openable">';
+                              $sidebar_output.='<li class="xn-openable">';
                                   $sidebar_output.='<a href="#">Diabetes</a>';
                                   $sidebar_output.='<ul>';
                                       $sidebar_output.='<li><a href="diabetes.php">All Programs</a></li>';
