@@ -1,7 +1,7 @@
 jQuery(function(){
     /* reportrange */
-    if(jQuery("#reportrange").length > 0){
-        jQuery("#reportrange").daterangepicker({
+    if(jQuery(".reportrange").length > 0){
+        jQuery(".reportrange").daterangepicker({
             ranges: {
                'Today': [moment(), moment()],
                'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
@@ -19,10 +19,10 @@ jQuery(function(){
             startDate: moment().subtract('days', 29),
             endDate: moment()
           },function(start, end) {
-              jQuery('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+              jQuery('.reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
         });
 
-        jQuery("#reportrange span").html(moment().subtract('days', 29).format('MMMM D, YYYY') + ' - ' + moment().format('MMMM D, YYYY'));
+        jQuery(".reportrange span").html(moment().subtract('days', 29).format('MMMM D, YYYY') + ' - ' + moment().format('MMMM D, YYYY'));
     }
     /* end reportrange */
 

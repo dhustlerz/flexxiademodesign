@@ -40,7 +40,7 @@
 
 
           $xnavigation_output.='<li class=" pull-right ">';
-              $xnavigation_output.='<div id="reportrange" class="border-radius-6 margin-right-6 color-fff bg-005180 padding-px-5 margin-top-10  ">';
+              $xnavigation_output.='<div id="reportrange" class="reportrange border-radius-6 margin-right-6 color-fff bg-005180 padding-px-5 margin-top-10  ">';
               $xnavigation_output.='<span></span><b class="caret"></b>';
           $xnavigation_output.='</div>';
       $xnavigation_output.='</li>';
