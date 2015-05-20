@@ -477,7 +477,7 @@ var nvd3Charts = function() {
 	};
 jQuery(window).resize(function(){
     	startChart9();
-    	startChart10();
+
     });
 		//Pie chart example data. Note how there is only a single array of key-value pairs.
 		function exampleDataDonut() {
