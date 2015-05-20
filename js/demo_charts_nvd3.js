@@ -292,7 +292,9 @@ var nvd3Charts = function() {
 				//return chart;
 			});
 		});
-
+	  jQuery(window).resize(function(){
+    	startChart5();
+    });
 	};
 
 	var startChart6 = function() {
@@ -414,6 +416,7 @@ var nvd3Charts = function() {
 			d3.select("#chart-9-diabetes svg").datum(exampleDataPieDiabetes()).transition().duration(350).call(chart);
 
 			return chart;
+
 		});
 
 		//Donut chart example
@@ -470,8 +473,12 @@ var nvd3Charts = function() {
 			});
 		});
 
-	};
 
+	};
+jQuery(window).resize(function(){
+    	startChart9();
+    	startChart10();
+    });
 		//Pie chart example data. Note how there is only a single array of key-value pairs.
 		function exampleDataDonut() {
 			return  [
@@ -583,6 +590,7 @@ var nvd3Charts = function() {
 			startChart9();
 		}
 	};
+
 }();
 
 nvd3Charts.init();
