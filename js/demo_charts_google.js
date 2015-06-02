@@ -4,9 +4,9 @@
   google.load("visualization", "1", {packages:["corechart"]});
   google.setOnLoadCallback(drawGoogleStackedChart);
   function drawGoogleStackedChart() {
-    jQuery(window).resize(function(){
-      drawGoogleStackedChart();
-    });
+    // jQuery(window).resize(function(){
+    //   drawGoogleStackedChart();
+    // });
   var data = google.visualization.arrayToDataTable([
    ['B_UNIT', 'Cardiovascular', 'Asthama', 'CNS', 'Oncology',
        'Diabetes',  { role: 'annotation' } ],
