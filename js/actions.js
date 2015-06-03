@@ -266,6 +266,12 @@ jQuery(window).resize(function(){
     page_content_onresize();
 });
 
+//On click add text field
+
+
+
+
+
 function onload(){
     x_navigation_onresize();
     page_content_onresize();

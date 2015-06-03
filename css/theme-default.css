@@ -2332,6 +2332,20 @@ input[type=checkbox] {
   text-align: center;
   min-width: 36px;
 }
+.input-group-addon-2 {
+  border-color:   background: #ffffff;
+  background: #002840;
+#002840;
+  background-color:   background: #002840;
+  background: #002840;
+#002840;
+  font-size: 13px;
+  padding: 0px 10px;
+  line-height: 28px;
+  color: #FFF;
+  text-align: center;
+  min-width: 36px;
+}
 .input-group-addon,
 .input-group-btn {
   vertical-align: bottom;
