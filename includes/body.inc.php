@@ -8,7 +8,9 @@
              // END PAGE SIDEBAR -->
 
              // PAGE CONTENT -->
+             echo'<div class="page-content">';
              include 'content.inc.php';
+             echo '</div>';
              // END PAGE CONTENT -->
 
 
@@ -22,6 +24,7 @@
         <!--
         *The message box is moved to in sidebar.inc.php so as to make a call from each page
         -->
+
         <!-- START PRELOADS -->
         <audio id="audio-alert" src="audio/alert.mp3" preload="auto"></audio>
         <audio id="audio-fail" src="audio/fail.mp3" preload="auto"></audio>
@@ -144,3 +147,4 @@
         <script type="text/javascript" src="js/demo_charts_nvd3.js"></script>
         <!-- END D3V3-->
     <!-- END SCRIPTS -->
+

@@ -1,7 +1,7 @@
 <?php
 
 $output = '';
-$output.='<div class="page-content">';
+
       /**
        * START X-NAVIGATION VERTICAL 1
        * we did'nt call x-navigation.inc.php because of some rendering/displaying issues
@@ -491,8 +491,8 @@ $output.='</div>';
 /*$output.='<script type="text/javascript" src="js/plugins/gauge.js"></script>';
 $output.='<script src="js/demo_gauge.js" />';*/
 
-$output.='</div>';
-
 print($output);
+
+
 
 ?>

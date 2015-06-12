@@ -1,6 +1,7 @@
 <?php
 $output = '';
-$output.='<div class="page-content">';
+
+
       /**
        * START X-NAVIGATION VERTICAL 1
        * we did'nt call x-navigation.inc.php because of some rendering/displaying issues
@@ -489,8 +490,8 @@ $output.='</div>';
 /**
  * END PAGE CONTENT WRAPPER
  */
-$output.='</div>';
-
 print($output);
+
+
 
 ?>
