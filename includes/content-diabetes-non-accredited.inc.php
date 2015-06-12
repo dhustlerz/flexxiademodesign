@@ -69,7 +69,7 @@ $output.='</ul>';
 /**
  * PAGE CONTENT WRAPPER
  */
-$output.='<div class="page-content-wrap ">';
+$output.='<div class="page-content-wrap bg-e5edf2">';
 
     /**
      * START WIDGETS
