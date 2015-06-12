@@ -144,46 +144,13 @@
         </div>
         <!-- END MESSAGE BOX-->
 
-        <!-- START PRELOADS -->
-        <audio id="audio-alert" src="audio/alert.mp3" preload="auto"></audio>
-        <audio id="audio-fail" src="audio/fail.mp3" preload="auto"></audio>
-        <!-- END PRELOADS -->
+    <!-- Start SCRIPTS -->
 
-    <!-- START SCRIPTS -->
-        <!-- START PLUGINS -->
-        <script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
-        <script type="text/javascript" src="js/plugins/jquery/jquery-ui.min.js"></script>
-        <script type="text/javascript" src="js/plugins/bootstrap/bootstrap.min.js"></script>
-        <!-- END PLUGINS -->
+        <?php
 
-        <!-- START THIS PAGE PLUGINS-->
-        <script type='text/javascript' src='js/plugins/icheck/icheck.min.js'></script>
-        <script type="text/javascript" src="js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js"></script>
-         <!-- START Rickshaw charts Plugin -->
-        <script type="text/javascript" src="js/plugins/rickshaw/d3.v3.js"></script>
-        <script type="text/javascript" src="js/plugins/rickshaw/rickshaw.min.js"></script>
-        <!-- END Rickshaw charts plugin -->
+        include 'includes/javascript.inc.php';
 
-        <!-- START Morris charts Plugin -->
-        <script type="text/javascript" src="js/plugins/morris/raphael-min.js"></script>
-        <script type="text/javascript" src="js/plugins/morris/morris.min.js"></script>
-        <script type="text/javascript" src="js/demo_charts_morris.js"></script>
-        <!-- END Morris charts plugin -->
-
-        <!-- START nvd3 charts Plugin -->
-        <script type="text/javascript" src="js/plugins/nvd3/lib/d3.v3.js"></script>
-        <script type="text/javascript" src="js/plugins/nvd3/nv.d3.min.js"></script>
-        <script type="text/javascript" src="js/demo_charts_nvd3.js"></script>
-        <!-- END nvd3 charts plugin -->
-
-
-
-        <!-- START TEMPLATE -->
-        <script type="text/javascript" src="js/settings.js"></script>
-        <script type="text/javascript" src="js/plugins.js"></script>
-        <script type="text/javascript" src="js/actions.js"></script>
-
-        <!-- END TEMPLATE -->
+        ?>
 
     <!-- END SCRIPTS -->
     </body>

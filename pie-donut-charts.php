@@ -112,45 +112,13 @@
         </div>
         <!-- END MESSAGE BOX-->
 
-        <!-- START PRELOADS -->
-        <audio id="audio-alert" src="audio/alert.mp3" preload="auto"></audio>
-        <audio id="audio-fail" src="audio/fail.mp3" preload="auto"></audio>
-        <!-- END PRELOADS -->
+    <!-- START SCRIPTS -->
+        <?php
 
-        <!-- START SCRIPTS -->
-        <!-- START PLUGINS -->
-        <script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
-        <script type="text/javascript" src="js/plugins/jquery/jquery-ui.min.js"></script>
-        <script type="text/javascript" src="js/plugins/bootstrap/bootstrap.min.js"></script>
-        <!-- END PLUGINS -->
+        include 'includes/javascript.inc.php';
 
-        <!-- START THIS PAGE PLUGINS-->
+        ?>
 
-        <script type='text/javascript' src='js/plugins/icheck/icheck.min.js'></script>
-        <script type="text/javascript" src="js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js"></script>
-
-        <!-- START nvd3 charts Plugin -->
-        <script type="text/javascript" src="js/plugins/nvd3/lib/d3.v3.js"></script>
-        <script type="text/javascript" src="js/plugins/nvd3/nv.d3.min.js"></script>
-        <script type="text/javascript" src="js/demo_charts_nvd3.js"></script>
-        <!-- END nvd3 charts plugin -->
-
-        <!-- START Morris charts Plugin -->
-        <script type="text/javascript" src="js/plugins/morris/raphael-min.js"></script>
-        <script type="text/javascript" src="js/plugins/morris/morris.min.js"></script>
-        <script type="text/javascript" src="js/demo_charts_morris.js"></script>
-        <!-- END Morris charts plugin -->
-
-        <!-- END THIS PAGE PLUGINS-->
-
-        <!-- START TEMPLATE -->
-        <script type="text/javascript" src="js/settings.js"></script>
-
-        <script type="text/javascript" src="js/plugins.js"></script>
-        <script type="text/javascript" src="js/actions.js"></script>
-
-
-        <!-- END TEMPLATE -->
     <!-- END SCRIPTS -->
     </body>
 </html>
