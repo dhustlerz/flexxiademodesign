@@ -294,7 +294,7 @@ jQuery('#diabetes-program').on('click', 'a', function(e){
         gaugejs("diabetes-gauge","diabetes-gauge-font",90);
         drawGoogleHorizontalStackedChart();
         googleMaps();
-       progressbarCustom()
+        progressbarCustom()
        }
     });
 });
