@@ -44,6 +44,7 @@ body {
   min-height: 100%;
   padding: 0px;
   margin: 0px;
+  background: #e5edf2;
   //background: #f5f5f5 url('../img/bg.png') left top repeat;
   position: relative;
   font-family: 'Open Sans', sans-serif;
