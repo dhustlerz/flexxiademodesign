@@ -1,15 +1,17 @@
 
 
+
 //var googleStackedChart = function() {
   google.load("visualization", "1", {packages:["corechart"]});
   google.setOnLoadCallback(drawGoogleStackedChart);
+
+
   function drawGoogleStackedChart() {
     // jQuery(window).resize(function(){
     //   drawGoogleStackedChart();
     // });
-  var data = google.visualization.arrayToDataTable([
-   ['B_UNIT', 'Cardiovascular', 'Asthama', 'CNS', 'Oncology',
-       'Diabetes',  { role: 'annotation' } ],
+    var data = google.visualization.arrayToDataTable([
+      ['B_UNIT', 'Cardiovascular', 'Asthama', 'CNS', 'Oncology','Diabetes',  { role: 'annotation' } ],
       ['PEI', 10, 25, 45, 25, 18, ''],
       ['NFLD', 15, 35, 55, 45, 16, ''],
       ['NB', 20, 45, 65, 65, 55,  ''],
@@ -36,8 +38,10 @@
     var chart = new google.visualization.ColumnChart(document.getElementById("google-stacked-chart"));
     chart.draw(view, options);
   }
-//}
-//var googleHorizontalStackedChart = function() {
+
+
+
+
   google.load("visualization", "1", {packages:["corechart"]});
   google.setOnLoadCallback(drawGoogleHorizontalStackedChart);
   function drawGoogleHorizontalStackedChart() {
@@ -75,38 +79,44 @@
         chart.draw(view, options);
     }
 
+
+
+
     google.load("visualization", "1", {packages:["corechart"]});
     google.setOnLoadCallback(drawGoogleHorizontalStackedChartDiabetesAccr);
     function drawGoogleHorizontalStackedChartDiabetesAccr() {
 
-    var data = google.visualization.arrayToDataTable([
-            ['Meetings', 'Total Programs', 'Evaluation', { role: 'annotation' } ],
-            ['Adding Meal-Time Insulin to Basal Insulin', 7, 10, ''],
-            ['Different Pokes for Different Folks', 4, 22,  ''],
-            ['Endocrine Emergencies', 4, 19,  ''],
-            ['From Sliding Scale to Basal Bolus', 2, 40,  ''],
-            ['Insulin Empowerment Program', 5, 20,  ''],
-            ['Insulinothérapie: Mise à jour pour les infirmières en milieu ', 2, 30,  ''],
-            ['Lapproche motivationelle chez le patient diabetique', 2, 70,  ''],
-            ['La transition des patients DT1 en milieu adulte: Un cheminement', 1, 50,  ''],
-            ['le traitement du diabète chez la personne âgée', 1, 12,  '']
+      var data = google.visualization.arrayToDataTable([
+              ['Meetings', 'Total Programs', 'Evaluation', { role: 'annotation' } ],
+              ['Adding Meal-Time Insulin to Basal Insulin', 7, 10, ''],
+              ['Different Pokes for Different Folks', 4, 22,  ''],
+              ['Endocrine Emergencies', 4, 19,  ''],
+              ['From Sliding Scale to Basal Bolus', 2, 40,  ''],
+              ['Insulin Empowerment Program', 5, 20,  ''],
+              ['Insulinothérapie: Mise à jour pour les infirmières en milieu ', 2, 30,  ''],
+              ['Lapproche motivationelle chez le patient diabetique', 2, 70,  ''],
+              ['La transition des patients DT1 en milieu adulte: Un cheminement', 1, 50,  ''],
+              ['le traitement du diabète chez la personne âgée', 1, 12,  '']
 
-    ]);
+      ]);
 
-        var view = new google.visualization.DataView(data);
+          var view = new google.visualization.DataView(data);
 
 
-        var options = {
-          height: 270,
-          legend: { position: 'top', maxLines: 3 },
-          bar: { groupWidth: '65%' },
-          colors: ['#7A92A3','#0B62A4'],
-          isStacked: true,
+          var options = {
+            height: 270,
+            legend: { position: 'top', maxLines: 3 },
+            bar: { groupWidth: '65%' },
+            colors: ['#7A92A3','#0B62A4'],
+            isStacked: true,
 
-        };
-        var chart = new google.visualization.BarChart(document.getElementById("google-stacked-chart-diabetes-acc"));
-        chart.draw(view, options);
+          };
+          var chart = new google.visualization.BarChart(document.getElementById("google-stacked-chart-diabetes-acc"));
+          chart.draw(view, options);
     }
+
+
+
 
     google.load("visualization", "1", {packages:["corechart"]});
     google.setOnLoadCallback(drawGoogleHorizontalStackedChartDiabetesNonAccr);
@@ -138,6 +148,5 @@
         chart.draw(view, options);
 //}
     }
-
 
 

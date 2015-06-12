@@ -261,10 +261,101 @@ jQuery(function(){
     /* END PROGGRESS COMPLETE */
 });
 
+
+
+
 jQuery(window).resize(function(){
     x_navigation_onresize();
     page_content_onresize();
 });
+
+function progressbarCustom() {
+jQuery.mpb("update",{value: 100, speed: 5, complete: function(){
+        jQuery(".mpb").fadeOut(200,function(){
+            jQuery(this).remove();
+        });
+    }});
+}
+
+/* Initialize content of Diabetes all programs page page */
+
+
+jQuery('#diabetes-program').on('click', 'a', function(e){
+    jQuery.mpb("show",{value: [0,50],speed: 5});
+    jQuery.ajax({
+      type: "GET",
+      url: 'includes/content-diabetes.inc.php',
+
+      success: function(data) {
+        //pageLoadingFrame("show","v1");
+        onload();
+        jQuery('.page-content').html(data);
+        nvd3Charts.init();
+        gaugejs("diabetes-gauge","diabetes-gauge-font",90);
+        drawGoogleHorizontalStackedChart();
+        googleMaps();
+       progressbarCustom()
+       }
+    });
+});
+
+
+/* Initialize content of Diabetes acceredited page page */
+
+jQuery('#diabetes-program-acrr').on('click', 'a', function(e){
+  jQuery.mpb("show",{value: [0,50],speed: 5});
+    jQuery.ajax({
+      type: "GET",
+      url: 'includes/content-diabetes-accredited.inc.php',
+
+      success: function(data) {
+
+        nvd3Charts.init();
+        jQuery('.page-content').html(data);
+        gaugejs("diabetes-gauge-accr","diabetes-gauge-accr-value",95);
+        drawGoogleHorizontalStackedChartDiabetesAccr();
+        googleMaps();
+        progressbarCustom();
+       }
+    });
+});
+
+
+/* Initialize content of Diabetes non-acceredited page page */
+
+jQuery('#diabetes-program-non-acrr').on('click', 'a', function(e){
+  jQuery.mpb("show",{value: [0,50],speed: 5});
+    jQuery.ajax({
+      type: "GET",
+      url: 'includes/content-diabetes-non-accredited.inc.php',
+
+      success: function(data) {
+        nvd3Charts.init();
+        jQuery('.page-content').html(data);
+        gaugejs("diabetes-gauge-non-accr","diabetes-gauge-non-accr-value",85);
+        drawGoogleHorizontalStackedChartDiabetesNonAccr();
+        googleMaps();
+        progressbarCustom();
+       }
+    });
+});
+
+
+// function googleMapChart() {
+
+//   drawGoogleHorizontalStackedChartDiabetesNonAccr();
+//   drawGoogleHorizontalStackedChartDiabetesAccr();
+//   drawGoogleHorizontalStackedChart();
+//   googleMaps();
+
+// }
+
+
+
+
+
+
+
 
 function onload(){
     x_navigation_onresize();
