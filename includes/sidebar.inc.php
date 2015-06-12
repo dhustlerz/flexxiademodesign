@@ -1,4 +1,5 @@
 <?php
+function sidebar() {
 $sidebar_output = '';
 $sidebar_output.='<div class="page-sidebar bg-19283d">';
 
@@ -131,7 +132,9 @@ $sidebar_output.='<div class="page-sidebar bg-19283d">';
    * END X-NAVIGATION
    */
 $sidebar_output.='</div>';
-printf($sidebar_output);
+return($sidebar_output);
+
+}
 
 
 ?>

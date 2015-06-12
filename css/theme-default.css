@@ -82,8 +82,7 @@ body {
   float: left;
   min-height: 100%;
   position: relative;
-  background: #e5edf2;
-  /* SIDEBAR */
+  background: #19283d;
   /* END SIDEBAR */
   /* CONTENT */
   /* END CONTENT */
@@ -98,14 +97,17 @@ body {
 }
 .page-container .page-sidebar.page-sidebar-fixed {
   position: fixed;
+
+
 }
 .page-container.page-container-wide .page-sidebar {
   width: 50px;
+  background-color: #19283d;
 }
 .page-container .page-content {
   min-height: 100%;
   margin-left: 220px;
- // background: #f5f5f5 url('../img/bg.png') left top repeat;
+  background: #e5edf2;
   position: relative;
   zoom: 1;
 }

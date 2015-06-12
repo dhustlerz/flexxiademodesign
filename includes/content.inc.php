@@ -1,4 +1,5 @@
 <?php
+function dashboard_content(){
 $output = '';
 
       /**
@@ -434,6 +435,7 @@ $output.='</div>';
  * END PAGE CONTENT WRAPPER
  */
 
-print($output);
+return($output);
+}
 
 ?>

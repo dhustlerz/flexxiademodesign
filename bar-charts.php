@@ -19,7 +19,10 @@
         <div class="page-container">
 
          <!-- START PAGE SIDEBAR -->
-            <?php include 'includes/sidebar.inc.php' ?>
+            <?php include 'includes/sidebar.inc.php';
+             $output=sidebar();
+             print($output);
+            ?>
             <!-- END PAGE SIDEBAR -->
 
             <!-- PAGE CONTENT -->
