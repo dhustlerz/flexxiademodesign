@@ -7,6 +7,13 @@
         <!-- END PRELOADS -->
 
     <!-- START SCRIPTS -->
+       <!-- Start Angular.js library -->
+        <script type="text/javascript" src="js/plugins/angularjs/angular.min.js"></script>
+        <script type="text/javascript" src="js/plugins/angularjs/angular-route.min.js"></script>
+        <!-- End Angular.js library -->
+
+
+
         <!-- START PLUGINS -->
         <script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
         <script type="text/javascript" src="js/plugins/jquery/jquery-ui.min.js"></script>
@@ -103,19 +110,25 @@
 
         <!-- END THIS PAGE PLUGINS-->
 
+
+
+
         <!-- Start Google Chart PLUGINS-->
          <script type="text/javascript" src="https://www.google.com/jsapi"></script>
          <script type="text/javascript" src="js/demo_charts_google.js"></script>
          <!-- END Google Chart PLUGINS-->
 
         <!-- START TEMPLATE -->
+
+
         <script type="text/javascript" src="js/settings.js"></script>
         <script type="text/javascript" src="js/plugins.js"></script>
+
         <script type="text/javascript" src="js/actions.js"></script>
-
-
         <script type="text/javascript" src="js/demo_dashboard.js"></script>
         <!--<script type="text/javascript" src="js/custom-charts.js"></script>-->
+
+
         <!-- END TEMPLATE -->
          <!-- START D3V3-->
         <script type="text/javascript" src="js/plugins/nvd3/lib/d3.v3.js"></script>

@@ -58,7 +58,7 @@ $sidebar_output.='<div class="page-sidebar bg-19283d">';
                               $sidebar_output.='<li class="menu xn-openable">';
                                   $sidebar_output.='<a href="#">Diabetes</a>';
                                   $sidebar_output.='<ul>';
-                                      $sidebar_output.='<li id="diabetes-program" class="menu"><a href="javascript:void(0);">All Programs</a></li>';
+                                      $sidebar_output.='<li id="diabetes-program" ng-click="/*divContentDiabetes.doClick()*/" class="menu"><a href="javascript:void(0);">All Programs</a></li>';
                                       $sidebar_output.='<li id="diabetes-program-acrr" class="menu"><a href="javascript:void(0);">Accredited</a></li>';
                                       $sidebar_output.='<li id="diabetes-program-non-acrr" class="menu"><a href="javascript:void(0);">Non Accredited</a></li>';
                                   $sidebar_output.='</ul>';

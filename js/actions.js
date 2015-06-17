@@ -277,6 +277,38 @@ jQuery.mpb("update",{value: 100, speed: 5, complete: function(){
     }});
 }
 
+/* reportrange */
+  reportRange();
+  function reportRange() {
+
+    if(jQuery(".reportrange").length > 0){
+        jQuery(".reportrange").daterangepicker({
+            ranges: {
+               'Today': [moment(), moment()],
+               'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+               'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+               'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+               'This Month': [moment().startOf('month'), moment().endOf('month')],
+               'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+            },
+            opens: 'left',
+            buttonClasses: ['btn btn-default'],
+            applyClass: 'btn-small btn-primary',
+            cancelClass: 'btn-small',
+            format: 'MM.DD.YYYY',
+            separator: ' to ',
+            startDate: moment().subtract('days', 29),
+            endDate: moment()
+          },function(start, end) {
+              jQuery('.reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+        });
+
+        jQuery(".reportrange span").html(moment().subtract('days', 29).format('MMMM D, YYYY') + ' - ' + moment().format('MMMM D, YYYY'));
+    }
+
+  }
+  /* end reportrange */
+
 /* Initialize content of Diabetes all programs page page */
 
 
@@ -292,6 +324,7 @@ jQuery('#diabetes-program').on('click', 'a', function(e){
         jQuery('.page-content').html(data);
         nvd3Charts.init();
         gaugejs("diabetes-gauge","diabetes-gauge-font",90);
+        reportRange();
         drawGoogleHorizontalStackedChart();
         googleMaps();
         progressbarCustom()
@@ -313,9 +346,12 @@ jQuery('#diabetes-program-acrr').on('click', 'a', function(e){
         nvd3Charts.init();
         jQuery('.page-content').html(data);
         gaugejs("diabetes-gauge-accr","diabetes-gauge-accr-value",95);
+        reportRange();
         drawGoogleHorizontalStackedChartDiabetesAccr();
         googleMaps();
         progressbarCustom();
+
+
        }
     });
 });
@@ -333,6 +369,7 @@ jQuery('#diabetes-program-non-acrr').on('click', 'a', function(e){
         nvd3Charts.init();
         jQuery('.page-content').html(data);
         gaugejs("diabetes-gauge-non-accr","diabetes-gauge-non-accr-value",85);
+        reportRange();
         drawGoogleHorizontalStackedChartDiabetesNonAccr();
         googleMaps();
         progressbarCustom();
@@ -349,6 +386,59 @@ jQuery('#diabetes-program-non-acrr').on('click', 'a', function(e){
 //   googleMaps();
 
 // }
+
+
+/*
+ * angular JS function START
+ * Author: JP
+ */
+var app = angular.module('myApp', []);
+    app.controller("contentCtrl", function($scope,$http) {
+
+        $scope.divContentDiabetes = {};
+
+        $scope.divContentDiabetes.doClick = function() {
+
+            var response = $http.get("includes/content-diabetes.inc.php");
+             //$scope.divContentDiabetes.diabetesConten = $scope.trustAsHtml(someHtmlVar);
+            response.success(function(data,status,header,config) {
+              $scope.divContentDiabetes.diabetesContent = data;
+            });
+            response.error(function(data,status,header,config) {
+              alert("AJAX failed!");
+            });
+
+
+        }
+
+
+
+});
+
+
+
+
+// function divContentDiabetes($scope, $http) {
+
+//     // URL to fetch Content content-diabetes.inc.php
+//     $scope.url = 'includes/content-diabetes.inc.php';
+
+//     // The function that will be executed on button click (diabetes-content())
+//     $scope.diabetes-content = function() {
+
+//         // create the http get request
+//         // The data will hold the content output
+//         // The Response in simple php to html output
+
+//         $http.get($scope.url, {"data"})
+//     }
+//}
+
+
+
+ /*
+  * Angular JS functions END
+  */
 
 
 
