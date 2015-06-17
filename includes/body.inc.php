@@ -2,7 +2,7 @@
         <?php
 
         $output ='';
-            $output='<div  class="page-container">';
+            $output='<div ng-app="myApp" ng-controller="contentCtrl" class="page-container">';
 
 
 
@@ -15,6 +15,7 @@
 
                      // PAGE CONTENT -->
                     $output.='<div class="page-content">';
+                    //$output.='';
                     include 'content.inc.php';
                     $output.= dashboard_content();
                     $output.='</div>';
