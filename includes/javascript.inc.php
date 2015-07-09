@@ -20,6 +20,7 @@
         <script type="text/javascript" src="js/plugins/bootstrap/bootstrap.min.js"></script>
         <!-- END PLUGINS -->
 
+
         <!-- START THIS PAGE PLUGINS-->
         <!-- MAP PLUGINS-->
         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
@@ -109,6 +110,34 @@
 
 
         <!-- END THIS PAGE PLUGINS-->
+
+        <script type='text/javascript' src='js/plugins/noty/jquery.noty.js'></script>
+        <script type='text/javascript' src='js/plugins/noty/layouts/topCenter.js'></script>
+        <script type='text/javascript' src='js/plugins/noty/layouts/topLeft.js'></script>
+        <script type='text/javascript' src='js/plugins/noty/layouts/topRight.js'></script>
+
+        <script type='text/javascript' src='js/plugins/noty/themes/default.js'></script>
+        <script type="text/javascript">
+            function notyConfirm(){
+                noty({
+                    text: 'Do you want to continue?',
+                    layout: 'topRight',
+                    buttons: [
+                            {addClass: 'btn btn-success btn-clean', text: 'Ok', onClick: function($noty) {
+                                $noty.close();
+                                noty({text: 'You clicked "Ok" button', layout: 'topRight', type: 'success'});
+                            }
+                            },
+                            {addClass: 'btn btn-danger btn-clean', text: 'Cancel', onClick: function($noty) {
+                                $noty.close();
+                                noty({text: 'You clicked "Cancel" button', layout: 'topRight', type: 'error'});
+                                }
+                            }
+                        ]
+                })
+            }
+        </script>
+        <!-- END PAGE PLUGINS -->
 
 
 
