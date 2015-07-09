@@ -26,7 +26,7 @@
 
     <div style="width:911px;" class=" container">
 
-      <div  style="background-image: url(img/az/azmain1.png); height: 675px; width: 911px; border: 1px solid #e5edf2; ">
+      <div  style="background: url(img/az/azmain1.png); height: 675px; width: 911px; border: 1px solid #e5edf2; ">
          <div class="row">
           <div class="col-sm-1">
           <a   onClick="noty({text: 'Meeting has been successfully created', layout: 'topRight', type: 'success'});"><img style=" cursor: pointer; height: 23px; width: 25px; margin-left: 540px; margin-top: 9px;" src="img/az/oneclick.png"> </a>
