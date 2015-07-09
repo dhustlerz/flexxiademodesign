@@ -19,13 +19,13 @@
 
     <div style="width:911px;" class=" container">
 
-      <div  style="background-image:url(img/az/azmain2.png); height: 675px; width: 911px; border: 1px solid #e5edf2; ">
+      <div  style="background-image:url(img/az/azmain.png); height: 675px; width: 911px; border: 1px solid #e5edf2; ">
          <div class="row">
           <div class="col-sm-1">
-          <a   onClick="noty({text: 'Meeting has been successfully created', layout: 'topRight', type: 'success'});"><img style=" cursor: pointer; height: 23px; width: 25px; margin-left: 540px; margin-top: 9px;" src="img/az/oneclick.png"> </a>
+          <a   onClick="noty({text: 'Success! WebEx is preparing your meeting room', layout: 'topCenter', type: 'success'});"><img style=" cursor: pointer;  margin-left: 420px; margin-top: 12px;" src="img/az/oneclick.png"> </a>
         </div>
-          <a   onClick="noty({text: 'Meeting has been successfully created', layout: 'topRight', type: 'success'});"><img style=" cursor: pointer; height: 23px;  margin-left: 720px; margin-top: 114px;" src="img/az/wx-drop-down-one-click.png"> </a>
-
+         <!--  <a   onClick="noty({text: 'Meeting has been successfully created', layout: 'topCenter', type: 'success'});"><img style=" cursor: pointer; height: 23px;  margin-left: 720px; margin-top: 114px;" src="img/az/wx-drop-down-one-click.png"> </a>
+ -->
 
 
           <!--  <button type="button" class=" mb-control Wxbutton" style=" height: 23px; width: 25px; margin-left: 550px; margin-top: 9px;" data-box="#message-box-success">Success</button> -->
@@ -43,11 +43,11 @@
           <div class="panel-body">
 
               <div class="form-group">
-                  <button class="btn btn-success" onClick="noty({text: 'Successful action', layout: 'topRight', type: 'success'});">Success</button>
-                  <button class="btn btn-danger" onClick="noty({text: 'There was an error', layout: 'topRight', type: 'error'});">Error</button>
-                  <button class="btn btn-warning" onClick="noty({text: 'Best check yo self', layout: 'topRight', type: 'warning'});">Warning</button>
-                  <button class="btn btn-info" onClick="noty({text: 'This alert needs your attention', layout: 'topRight', type: 'information'});">Warning</button>
-                  <button class="btn btn-primary" onClick="notyConfirm();">Confirm</button>
+                  <button class="btn btn-success" onClick="noty({text: 'Success! WebEx is preparing your meeting room', layout: 'topCenter', type: 'success'});">Success</button>
+                  <button class="btn btn-danger" onClick="noty({text: 'Oops! Somethings wrong. Please try again or contact support@azlearningondemand.com', layout: 'topCenter', type: 'error'});">Error</button>
+                 <!--  <button class="btn btn-warning" onClick="noty({text: 'Best check yo self', layout: 'topCenter', type: 'warning'});">Warning</button>
+                  <button class="btn btn-info" onClick="noty({text: 'This alert needs your attention', layout: 'topCenter', type: 'information'});">Warning</button>
+                  <button class="btn btn-primary" onClick="notyConfirm();">Confirm</button> -->
               </div>
           </div>
       </div>
