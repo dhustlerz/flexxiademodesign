@@ -24,7 +24,7 @@
           <div class="col-sm-1">
           <a   onClick="noty({text: 'Meeting has been successfully created', layout: 'topRight', type: 'success'});"><img style=" cursor: pointer; height: 23px; width: 25px; margin-left: 540px; margin-top: 9px;" src="img/az/oneclick.png"> </a>
         </div>
-          <a   onClick="noty({text: 'Meeting has been successfully created', layout: 'topRight', type: 'success'});"><img style=" cursor: pointer; height: 23px;  margin-left: 720px; margin-top: 114px;" src="img/az/drop-down-one-click.PNG"> </a>
+          <a   onClick="noty({text: 'Meeting has been successfully created', layout: 'topRight', type: 'success'});"><img style=" cursor: pointer; height: 23px;  margin-left: 720px; margin-top: 114px;" src="img/az/drop-down-one-click.png"> </a>
 
 
 
