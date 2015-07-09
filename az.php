@@ -3,14 +3,7 @@
     <head>
         <?php include 'includes/head.inc.php' ?>
         <link rel="stylesheet" href="css/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
-        <style type="text/css">
-            .Wxbutton
-            {
-            background: url(img/az/azmain.png) no-repeat;
-            cursor:pointer;
-                        border: none;
-            }
-        </style>
+
     </head>
 
 
@@ -26,7 +19,7 @@
 
     <div style="width:911px;" class=" container">
 
-      <div  style="background: url(img/az/azmain1.png); height: 675px; width: 911px; border: 1px solid #e5edf2; ">
+      <div  style="background-image:url(img/az/azbg2.png); height: 675px; width: 911px; border: 1px solid #e5edf2; ">
          <div class="row">
           <div class="col-sm-1">
           <a   onClick="noty({text: 'Meeting has been successfully created', layout: 'topRight', type: 'success'});"><img style=" cursor: pointer; height: 23px; width: 25px; margin-left: 540px; margin-top: 9px;" src="img/az/oneclick.png"> </a>
