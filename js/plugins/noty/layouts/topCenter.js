@@ -22,7 +22,7 @@
         });
 
         jQuery(this).css({
-            left: (jQuery(window).width() - jQuery(this).outerWidth(false)) / 2 + 'px'
+          left: (jQuery(window).width() - jQuery(this).outerWidth(false)) / 2 + 'px'
         });
       }
     },
