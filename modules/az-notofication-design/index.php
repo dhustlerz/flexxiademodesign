@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
      <!-- META SECTION -->
     <title>Flexxia  Demo App</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -8,8 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <!-- END META SECTION -->
+
     <!-- CSS INCLUDE -->
     <link rel="stylesheet" type="text/css" id="theme" href="css/theme-default.css"/>
+    <!-- CSS INCLUDE -->
   </head>
 
   <body>
@@ -17,11 +20,9 @@
     <div style="width:911px;" class=" container">
 
       <div  style="background-image:url(img/az/azmain.png); height: 675px; width: 911px; border: 1px solid #e5edf2; ">
-
         <div class="row">
           <a   onClick="noty({text: 'Success! WebEx is preparing your meeting room', layout: 'topCenter', type: 'success'});"><img style=" cursor: pointer;  margin-left: 420px; margin-top: 12px;" src="img/az/oneclick.png"> </a>
         </div>
-
       </div>
 
       <!-- START NOTY PLUGIN -->
@@ -51,7 +52,7 @@
     <script type='text/javascript' src='js/plugins/noty/jquery.noty.js'></script>
     <script type='text/javascript' src='js/plugins/noty/layouts/topCenter.js'></script>
     <script type='text/javascript' src='js/plugins/noty/themes/default.js'></script>
-    <!-- END PAGE PLUGINS -->
+    <!-- Noty library plugins -->
 
   </body>
 </html>
