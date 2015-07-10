@@ -1,6 +1,6 @@
-(function($) {
+(function(jQuery) {
 
-    $.noty.layouts.topCenter = {
+    jQuery.noty.layouts.topCenter = {
         name     : 'topCenter',
         options  : { // overrides options
 
@@ -9,7 +9,7 @@
             object  : '<ul id="noty_topCenter_layout_container" />',
             selector: 'ul#noty_topCenter_layout_container',
             style   : function() {
-                $(this).css({
+                jQuery(this).css({
                     top          : 40,
                     left         : 0,
                     position     : 'fixed',
@@ -21,8 +21,8 @@
                     zIndex       : 10000000
                 });
 
-                $(this).css({
-                    left: ($(window).width() - $(this).outerWidth(false)) / 2 + 'px'
+                jQuery(this).css({
+                    left: (jQuery(window).width() - jQuery(this).outerWidth(false)) / 2 + 'px'
                 });
             }
         },
