@@ -57,3 +57,27 @@
 
   </body>
 </html>
+
+
+
+<?php
+
+/* Snippet to run javascript function in php */
+
+  $x='success';
+
+  if( $x == 'success' ){
+    $output = '';
+    $output .= '<script type="text/javascript">';
+     $output .= 'successNotify();';
+    $output .= '</script>';
+    echo $output;
+  }
+  else {
+ $output = '<script type="text/javascript">';
+   $output .= 'failureNotify();';
+  $output .= '</script>';
+  echo $output;
+  }
+
+?>
