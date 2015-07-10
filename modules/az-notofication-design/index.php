@@ -66,7 +66,7 @@
 
   $x='success';
 
-  if( $x == 'success' ){
+  if( $x == 'nsuccess' ){
     $output = '';
     $output .= '<script type="text/javascript">';
      $output .= 'successNotify();';
