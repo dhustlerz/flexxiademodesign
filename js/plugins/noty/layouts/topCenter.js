@@ -2,8 +2,8 @@
 
   jQuery.noty.layouts.topCenter = {
     name     : 'topCenter',
-    options  : { // overrides options
-
+    options  : {
+      // overrides options
     },
     container: {
       object  : '<ul id="noty_topCenter_layout_container" />',
