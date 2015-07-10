@@ -21,7 +21,7 @@
 
       <div  style="background-image:url(img/az/azmain.png); height: 675px; width: 911px; border: 1px solid #e5edf2; ">
         <div class="row">
-          <a   onClick="noty({text: 'Success! WebEx is preparing your meeting room', layout: 'topCenter', type: 'success'});"><img style=" cursor: pointer;  margin-left: 420px; margin-top: 12px;" src="img/az/oneclick.png"> </a>
+          <a   onClick="successNotify();"><img style=" cursor: pointer;  margin-left: 420px; margin-top: 12px;" src="img/az/oneclick.png"> </a>
         </div>
       </div>
 
@@ -32,8 +32,8 @@
           </div>
           <div class="panel-body">
               <div class="form-group">
-                  <button class="btn btn-success" onClick="noty({text: 'Success! WebEx is preparing your meeting room', layout: 'topCenter', type: 'success'});">Success</button>
-                  <button class="btn btn-danger" onClick="noty({text: 'Oops! Somethings wrong. Please try again or contact support@azlearningondemand.com', layout: 'topCenter', type: 'error'});">Error</button>
+                  <button class="btn btn-success" onClick="successNotify();">Success</button>
+                  <button class="btn btn-danger" onClick="failureNotify();">Error</button>
               </div>
           </div>
       </div>
@@ -52,6 +52,7 @@
     <script type='text/javascript' src='js/plugins/noty/jquery.noty.js'></script>
     <script type='text/javascript' src='js/plugins/noty/layouts/topCenter.js'></script>
     <script type='text/javascript' src='js/plugins/noty/themes/default.js'></script>
+    <script type='text/javascript' src='js/custom.js'></script>
     <!-- Noty library plugins -->
 
   </body>
