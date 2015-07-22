@@ -1,7 +1,7 @@
 
 
     /* gauge.js start */
-  if (window.location.pathname+window.location.search == '/flexxia-demo/dashboard.php') {
+  if (window.location.pathname+window.location.search == '/flexxiademodesign/dashboard.php') {
 
     gaugejs("dashboard-gauge","dashboard-gauge-font",90);
   }
