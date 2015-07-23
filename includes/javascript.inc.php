@@ -144,6 +144,8 @@
         <!-- Start Google Chart PLUGINS-->
          <script type="text/javascript" src="https://www.google.com/jsapi"></script>
          <script type="text/javascript" src="js/demo_charts_google.js"></script>
+         <script type="text/javascript" src="js/ganalytics.js"></script>
+
          <!-- END Google Chart PLUGINS-->
 
         <!-- START TEMPLATE -->
